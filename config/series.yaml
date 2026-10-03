@@ -8,7 +8,7 @@
 #           spread  = a difference of two yields in percentage points; shown and changed in bp
 #           price   = an index, FX rate or commodity price; changes reported in percent
 #           level   = an index read as a level (VIX, MOVE); changes in points
-#   group   rates_us | rates_uk | rates_eur | rates_in | inflation | credit | equity | fx | commodities | vol | curve
+#   group   rates_us | rates_uk | rates_eur | inflation | credit | equity | vol | fx | commodities | india | curve
 #   show    false keeps a series out of the snapshot table (still stored and charted)
 #
 # Verify any code you add at its source before relying on it. The data-quality report
@@ -48,8 +48,14 @@ series:
   - {id: EUR_10Y, source: ecb, code: "YC/B.U2.EUR.4F.G_N_A.SV_C_YM.SR_10Y", name: "Euro AAA 10y", unit: pct, group: rates_eur}
   - {id: ESTR,    source: ecb, code: "EST/B.EU000A2X2A25.WT",               name: "€STR",         unit: pct, group: rates_eur}
 
-  # --- India (monthly OECD series on FRED until Project 5 adds daily G-sec data) ---
-  - {id: IN_10Y_M, source: fred, code: INDIRLTLT01STM, name: "India 10y G-sec (monthly)", unit: pct, group: rates_in}
+  # --- India (its own section in the brief). The 10y G-sec is a monthly OECD series on FRED,
+  #     lagging about three months, until Project 5 adds daily FBIL/CCIL yields. ---
+  - {id: NIFTY,     source: yahoo, code: "^NSEI",     name: "Nifty 50",        unit: price, group: india}
+  - {id: SENSEX,    source: yahoo, code: "^BSESN",    name: "Sensex",          unit: price, group: india}
+  - {id: BANKNIFTY, source: yahoo, code: "^NSEBANK",  name: "Nifty Bank",      unit: price, group: india}
+  - {id: INDIAVIX,  source: yahoo, code: "^INDIAVIX", name: "India VIX",       unit: level, group: india}
+  - {id: USDINR,    source: yahoo, code: "INR=X",     name: "USD/INR",         unit: price, group: india}
+  - {id: IN_10Y_M,  source: fred,  code: INDIRLTLT01STM, name: "India 10y G-sec (monthly)", unit: pct, group: india}
 
   # --- Credit (ICE BofA option-adjusted spreads on FRED, in percent) ---
   - {id: US_IG_OAS, source: fred, code: BAMLC0A0CM,   name: "US IG credit spread",  unit: spread, group: credit}
@@ -61,14 +67,16 @@ series:
   - {id: SX5E,   source: yahoo, code: "^STOXX50E", name: "Euro Stoxx 50",  unit: price, group: equity}
   - {id: FTSE,   source: yahoo, code: "^FTSE",     name: "FTSE 100",       unit: price, group: equity}
   - {id: NIKKEI, source: yahoo, code: "^N225",     name: "Nikkei 225",     unit: price, group: equity}
-  - {id: NIFTY,  source: yahoo, code: "^NSEI",     name: "Nifty 50",       unit: price, group: equity}
+  - {id: HSI,    source: yahoo, code: "^HSI",      name: "Hang Seng",      unit: price, group: equity}
+  - {id: SHCOMP, source: yahoo, code: "000001.SS", name: "Shanghai Composite", unit: price, group: equity}
+  - {id: KOSPI,  source: yahoo, code: "^KS11",     name: "KOSPI",          unit: price, group: equity}
   - {id: VIX,    source: yahoo, code: "^VIX",      name: "VIX",            unit: level, group: vol}
   - {id: MOVE,   source: yahoo, code: "^MOVE",     name: "MOVE (rates vol)", unit: level, group: vol}
   - {id: DXY,    source: yahoo, code: "DX-Y.NYB",  name: "Dollar index",   unit: price, group: fx}
-  - {id: USDINR, source: yahoo, code: "INR=X",     name: "USD/INR",        unit: price, group: fx}
   - {id: EURUSD, source: yahoo, code: "EURUSD=X",  name: "EUR/USD",        unit: price, group: fx}
   - {id: GBPUSD, source: yahoo, code: "GBPUSD=X",  name: "GBP/USD",        unit: price, group: fx}
   - {id: USDJPY, source: yahoo, code: "JPY=X",     name: "USD/JPY",        unit: price, group: fx}
+  - {id: USDCNH, source: yahoo, code: "CNH=X",     name: "USD/CNH",        unit: price, group: fx}
   - {id: BRENT,  source: yahoo, code: "BZ=F",      name: "Brent crude",    unit: price, group: commodities}
   - {id: GOLD,   source: yahoo, code: "GC=F",      name: "Gold",           unit: price, group: commodities}
   - {id: COPPER, source: yahoo, code: "HG=F",      name: "Copper",         unit: price, group: commodities}

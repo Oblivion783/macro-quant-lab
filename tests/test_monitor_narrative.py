@@ -82,3 +82,23 @@ class TestNarrative(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestIndiaSection(unittest.TestCase):
+    def test_india_bullets_separate_and_grounded(self):
+        from mql.config import Series, Watchlist
+        from tests.helpers import random_walk
+        wl = mini_watchlist()
+        wl.series += [Series("NIFTY", "yahoo", "^NSEI", "Nifty 50", "price", "india"),
+                      Series("USDINR", "yahoo", "INR=X", "USD/INR", "price", "india")]
+        p = mini_panel()
+        p["NIFTY"] = random_walk(start=25000, step=120, seed=8)
+        p["USDINR"] = random_walk(start=88, step=0.1, seed=9)
+        s = monitor.build_snapshot(p, wl, date(2026, 10, 2))
+        n = narrative.template_narrative(s)
+        self.assertEqual(len(n["india"]), 2)
+        self.assertTrue(n["india"][0].startswith("Nifty 50"))
+        self.assertFalse(any("Nifty" in b for b in n["bullets"]))
+        ok, unknown = narrative.check_grounding(" ".join(n["india"]), s)
+        self.assertTrue(ok, unknown)
+        self.assertIn("| **India** |", monitor.table_markdown(s))

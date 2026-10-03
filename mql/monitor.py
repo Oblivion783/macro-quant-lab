@@ -104,11 +104,11 @@ def top_movers(snapshot: dict, n: int = 6, max_age_days: int = 4) -> list[dict]:
 
 
 def table_markdown(snapshot: dict, groups: list[str] | None = None) -> str:
-    order = groups or ["rates_us", "rates_uk", "rates_eur", "rates_in", "inflation", "credit",
-                       "equity", "vol", "fx", "commodities"]
-    labels = {"rates_us": "US rates", "rates_uk": "UK rates", "rates_eur": "Euro rates", "rates_in": "India rates",
+    order = groups or ["rates_us", "rates_uk", "rates_eur", "inflation", "credit",
+                       "equity", "vol", "fx", "commodities", "india"]
+    labels = {"rates_us": "US rates", "rates_uk": "UK rates", "rates_eur": "Euro rates",
               "inflation": "Inflation", "credit": "Credit", "equity": "Equities", "vol": "Volatility",
-              "fx": "FX", "commodities": "Commodities"}
+              "fx": "FX", "commodities": "Commodities", "india": "India"}
     lines = ["| | Level | 1d | 1w | 1m | z (1y) | As of |", "|---|---:|---:|---:|---:|---:|---|"]
     for g in order:
         rows = [r for r in snapshot["series"] if r["group"] == g]

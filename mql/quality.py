@@ -42,7 +42,7 @@ def check_series(s: pd.Series, unit: str, today: date, error: str | None = None)
     last_date = s.index.max().date()
     freq = infer_frequency(s)
     lag = business_days_between(last_date, today)
-    limit = {"daily": 4, "weekly": 10, "monthly": 50}.get(freq, 10)
+    limit = {"daily": 4, "weekly": 10, "monthly": 100}.get(freq, 10)  # monthly OECD series lag ~3 months
     if lag > limit:
         issues.append(f"stale: last value {last_date} is {lag} business days old ({freq} series)")
         status = "warn"

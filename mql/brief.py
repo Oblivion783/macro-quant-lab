@@ -12,15 +12,17 @@ DISCLAIMER = ("*Personal research on public data. Not investment advice. Views a
 
 CHART_ORDER = [("ust_curve", "US Treasury curve"), ("rates_10y", "10-year yields"), ("curves", "Curve slopes"),
                ("inflation", "Market-implied inflation"), ("credit", "Credit spreads"),
-               ("equities", "Equities"), ("fx", "FX")]
+               ("equities", "Equities"), ("fx", "FX"), ("india", "India")]
 
 
 def brief_markdown(day: date, narrative: dict, snapshot: dict, charts_rel: str | None = "assets/charts") -> str:
     """charts_rel=None leaves the chart out (archive pages: charts always show the latest data)."""
-    out = [f"# Daily Macro Desk · {day:%a %d %b %Y}", "", f"## {narrative['headline']}", ""]
+    out = [f"# Daily Macro Desk · {day:%a %d %b %Y}", "", f"## {narrative['headline']}", "", "### Global markets", ""]
     out += [f"- {b}" for b in narrative.get("bullets", [])]
     if narrative.get("context"):
         out += ["", " ".join(narrative["context"])]
+    if narrative.get("india"):
+        out += ["", "### India", ""] + [f"- {b}" for b in narrative["india"]]
     if charts_rel:
         out += ["", f"![US Treasury curve]({charts_rel}/ust_curve.png)", "", "[All charts →](monitor.md)"]
     out += ["", "## The table", "", monitor.table_markdown(snapshot), ""]
@@ -54,6 +56,8 @@ def update_readme(readme: Path, day: date, narrative: dict) -> None:
     text = readme.read_text(encoding="utf-8")
     block = [f"**{day:%a %d %b %Y} · {narrative['headline']}**", ""]
     block += [f"- {b}" for b in narrative.get("bullets", [])[:5]]
+    if narrative.get("india"):
+        block += ["", "**India**", ""] + [f"- {b}" for b in narrative["india"][:4]]
     block += ["", f"[Full brief, charts and table →]({config.SITE_URL}/) · "
                   f"[Archive]({config.SITE_URL}/brief/)"]
     new = "\n".join(block)

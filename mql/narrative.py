@@ -15,8 +15,9 @@ import re
 from . import monitor
 from .monitor import fmt_change, fmt_level
 
-AREA = {"rates_us": "rates", "rates_uk": "rates", "rates_eur": "rates", "rates_in": "rates", "inflation": "inflation",
-        "credit": "credit", "equity": "equities", "vol": "volatility", "fx": "FX", "commodities": "commodities"}
+AREA = {"rates_us": "rates", "rates_uk": "rates", "rates_eur": "rates", "inflation": "inflation", "credit": "credit",
+        "equity": "equities", "vol": "volatility", "fx": "FX", "commodities": "commodities", "india": "India"}
+INDIA = ("NIFTY", "SENSEX", "BANKNIFTY", "INDIAVIX", "USDINR", "IN_10Y_M")
 
 
 def _verb(unit: str, c: float) -> str:
@@ -38,13 +39,31 @@ def describe(r: dict) -> str:
     return f"{r['name']} {_verb(r['unit'], c)} {mag} to {fmt_level(r['unit'], r['last'])}{tail}."
 
 
+def india_bullets(snapshot: dict, max_age_days: int = 5) -> list[str]:
+    """The India section: always shown, separate from the global movers."""
+    import pandas as pd
+
+    asof = pd.Timestamp(snapshot["asof"])
+    by = {r["id"]: r for r in snapshot["series"]}
+    out = []
+    for k in INDIA:
+        r = by.get(k)
+        if not r:
+            continue
+        if k == "IN_10Y_M":
+            out.append(f"{r['name']}: {fmt_level(r['unit'], r['last'])} (latest monthly reading, {r['date'][:7]}).")
+        elif (asof - pd.Timestamp(r["date"])).days <= max_age_days:
+            out.append(describe(r))
+    return out
+
+
 def template_narrative(snapshot: dict, quality_line: str = "") -> dict:
-    movers = monitor.top_movers(snapshot, n=6)
+    movers = [r for r in monitor.top_movers(snapshot, n=10) if r["group"] != "india"][:6]
     by = {r["id"]: r for r in snapshot["series"]}
     reg = monitor.regime(snapshot)
     headline = describe(movers[0]).rstrip(".") if movers else "A quiet session across the watchlist"
     bullets = [describe(r) for r in movers[1:]]
-    key = [by[k] for k in ("UST_10Y", "UK_10Y", "EUR_10Y", "SPX", "USDINR") if k in by and by[k] not in movers]
+    key = [by[k] for k in ("UST_10Y", "UK_10Y", "EUR_10Y", "SPX", "NIKKEI") if k in by and by[k] not in movers]
     bullets += [describe(r) for r in key[:3]]
     context = []
     if "curve" in reg:
@@ -55,8 +74,8 @@ def template_narrative(snapshot: dict, quality_line: str = "") -> dict:
         context.append(f"Equity volatility looks {reg['equity_vol']}.")
     if "inflation_pricing" in reg:
         context.append(f"US 10-year breakeven inflation is {reg['inflation_pricing']}.")
-    return {"writer": "template", "headline": headline, "bullets": bullets, "context": context,
-            "quality": quality_line}
+    return {"writer": "template", "headline": headline, "bullets": bullets, "india": india_bullets(snapshot),
+            "context": context, "quality": quality_line}
 
 
 # ---------------------------------------------------------------- grounding check
@@ -102,7 +121,10 @@ date, forecast or level. If you are unsure of a cause, say "likely" or leave it 
 
 Write JSON with keys:
  "headline": one line, the single most important move and why it matters,
- "bullets": 4 to 6 short bullets, each "move, level, likely driver",
+ "bullets": 4 to 6 short bullets on global markets (US, Europe, UK, Japan, China and Asia, rates, credit, FX,
+            commodities), each "move, level, likely driver",
+ "india": 2 to 5 short bullets on Indian markets only (Nifty 50, Sensex, Nifty Bank, India VIX, USD/INR, India 10y)
+          and how the global moves above bear on them,
  "context": 1 to 3 sentences on what this means for rates, credit, equities and FX together.
 
 Regime read (rule-based): {regime}
@@ -128,7 +150,9 @@ def llm_narrative(snapshot: dict, generate) -> tuple[dict | None, dict]:
     m = re.search(r"\{.*\}", raw, re.S)
     try:
         data = json.loads(m.group(0) if m else raw)
-        text = " ".join([data.get("headline", "")] + list(data.get("bullets", [])) + [data.get("context", "")])
+        ctx_raw = data.get("context", "")
+        ctx_txt = ctx_raw if isinstance(ctx_raw, str) else " ".join(ctx_raw)
+        text = " ".join([data.get("headline", "")] + list(data.get("bullets", [])) + list(data.get("india", [])) + [ctx_txt])
     except Exception:
         audit["error"] = "response was not valid JSON"
         return None, audit
@@ -139,6 +163,7 @@ def llm_narrative(snapshot: dict, generate) -> tuple[dict | None, dict]:
     ctx = data.get("context", "")
     return {"writer": "llm", "headline": data.get("headline", "").strip(),
             "bullets": [b.strip() for b in data.get("bullets", []) if b.strip()],
+            "india": [b.strip() for b in data.get("india", []) if b.strip()] or india_bullets(snapshot),
             "context": [ctx] if isinstance(ctx, str) else list(ctx)}, audit
 
 

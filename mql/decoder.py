@@ -198,8 +198,10 @@ def decode(bank: str, day: str, url: str, text: str | None = None, cfg: dict | N
 
 
 # ---------------------------------------------------------------- feeds
-def parse_feed(xml_text: str) -> list[dict]:
-    root = ET.fromstring(xml_text)
+def parse_feed(xml_text: str | bytes) -> list[dict]:
+    if isinstance(xml_text, str):
+        xml_text = xml_text.lstrip("\ufeff \r\n\t").encode("utf-8")
+    root = ET.fromstring(xml_text.lstrip(b"\xef\xbb\xbf \r\n\t"))
     items = []
     for it in root.iter("item"):
         title = (it.findtext("title") or "").strip()
@@ -221,7 +223,7 @@ def check_feeds(cfg: dict | None = None, publish: bool = True) -> list[dict]:
     for bank, b in cfg["banks"].items():
         if not b.get("feed"):
             continue
-        items = [i for i in parse_feed(_get(b["feed"]).text)
+        items = [i for i in parse_feed(_get(b["feed"]).content)
                  if b.get("title_match", "").lower() in i["title"].lower() and i["date"]]
         for i in sorted(items, key=lambda x: x["date"]):
             if not (bank_dir(bank) / f"{i['date']}.txt").exists():
@@ -263,7 +265,19 @@ if __name__ == "__main__":
     if a.evaluate:
         print(evaluate())
     elif a.check_feeds:
-        print(check_feeds(publish=not a.no_publish))
+        import json
+        from datetime import timezone
+
+        status = {"ran": datetime.now(timezone.utc).isoformat(timespec="seconds")}
+        try:
+            status["decoded"] = check_feeds(publish=not a.no_publish)
+        except Exception as e:  # recorded so failures are visible without the Actions log
+            status["error"] = f"{type(e).__name__}: {e}"[:500]
+        config.LATEST.mkdir(parents=True, exist_ok=True)
+        (config.LATEST / "decoder_status.json").write_text(json.dumps(status, indent=1))
+        print(status)
+        if "error" in status:
+            raise SystemExit(1)
     elif a.bank and a.url:
         datetime.strptime(a.date, "%Y-%m-%d")
         print(decode(a.bank, a.date, a.url, publish=not a.no_publish))

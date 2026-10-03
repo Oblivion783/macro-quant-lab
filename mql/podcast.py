@@ -37,6 +37,9 @@ def script(day: date, narrative: dict) -> str:
              f"The headline: {narrative['headline'].rstrip('.')}."]
     parts += [b for b in narrative.get("bullets", [])]
     parts += narrative.get("context", [])
+    if narrative.get("india"):
+        parts.append("Now India")
+        parts += narrative["india"]
     parts.append("That's the brief. Personal research on public data, not investment advice. Have a good day.")
     return speakable(" ".join(p if p.endswith(".") else p + "." for p in parts))
 

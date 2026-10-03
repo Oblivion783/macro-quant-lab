@@ -155,10 +155,13 @@ def build_all(panel: pd.DataFrame, out_dir: Path) -> dict[str, str]:
                                       "Market-implied inflation", "Percent", p),
         "credit": lambda p: small_multiples(panel, ["US_IG_OAS", "US_HY_OAS"], ["US investment grade", "US high yield"],
                                             "Credit spreads (option-adjusted)", "Basis points", p, scale=100),
-        "equities": lambda p: lines(panel, ["SPX", "SX5E", "NIFTY"], ["S&P 500", "Euro Stoxx 50", "Nifty 50"],
+        "equities": lambda p: lines(panel, ["SPX", "SX5E", "NIKKEI"], ["S&P 500", "Euro Stoxx 50", "Nikkei 225"],
                                      "Equities, indexed to 100", "Index", p, index_to_100=True, fmt="{:.0f}"),
-        "fx": lambda p: lines(panel, ["DXY", "USDINR", "EURUSD"], ["Dollar index", "USD/INR", "EUR/USD"],
+        "fx": lambda p: lines(panel, ["DXY", "EURUSD", "USDJPY"], ["Dollar index", "EUR/USD", "USD/JPY"],
                                "FX, indexed to 100", "Index", p, index_to_100=True, fmt="{:.1f}"),
+        "india": lambda p: lines(panel, ["NIFTY", "BANKNIFTY", "USDINR"], ["Nifty 50", "Nifty Bank", "USD/INR"],
+                                  "India: equities and the rupee, indexed to 100", "Index", p, index_to_100=True,
+                                  fmt="{:.1f}"),
     }
     for name, fn in jobs.items():
         try:
