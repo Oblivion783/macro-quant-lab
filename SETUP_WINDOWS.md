@@ -14,7 +14,7 @@ Open https://github.com/Oblivion783/macro-quant-lab and go to **Settings**.
      - `GEMINI_API_KEY` (optional): a free key from https://aistudio.google.com/apikey created with your personal Google account. Without it the brief uses the template writer.
    - **Variables → New repository variable**
      - `PUBLISH_ENABLED` = `false`. Change it to `true` only after you have checked your employer's outside-activities and social-media policies (calendar reminder: Sun 11 Oct). Until then the daily job stores data only and publishes nothing.
-4. **Actions** tab: click **Daily Macro Desk → Run workflow**. The first run downloads about eight years of history (a few minutes). A green tick means it worked; open the run to see the data-quality summary.
+4. **Actions** tab: the first run already happened on 4 Oct 2026 (55 series, all passing the quality checks, plus the last four Fed statements decoded). It now runs every weekday at 05:47 IST; **Daily Macro Desk → Run workflow** runs it on demand. A green tick means it worked.
 
 ## Part B · Your laptop (PowerShell, 30 minutes)
 
