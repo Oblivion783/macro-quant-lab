@@ -1,8 +1,8 @@
 {
  "asof": "2026-10-04",
  "counts": {
-  "ok": 47,
-  "warn": 1,
+  "ok": 55,
+  "warn": 0,
   "fail": 0
  },
  "series": [
@@ -175,11 +175,44 @@
    "frequency": "daily"
   },
   {
+   "id": "NIFTY",
+   "status": "ok",
+   "issues": [],
+   "last_date": "2026-10-01",
+   "frequency": "daily"
+  },
+  {
+   "id": "SENSEX",
+   "status": "ok",
+   "issues": [],
+   "last_date": "2026-10-01",
+   "frequency": "daily"
+  },
+  {
+   "id": "BANKNIFTY",
+   "status": "ok",
+   "issues": [],
+   "last_date": "2026-10-01",
+   "frequency": "daily"
+  },
+  {
+   "id": "INDIAVIX",
+   "status": "ok",
+   "issues": [],
+   "last_date": "2026-10-01",
+   "frequency": "daily"
+  },
+  {
+   "id": "USDINR",
+   "status": "ok",
+   "issues": [],
+   "last_date": "2026-10-03",
+   "frequency": "daily"
+  },
+  {
    "id": "IN_10Y_M",
-   "status": "warn",
-   "issues": [
-    "stale: last value 2026-07-01 is 68 business days old (monthly series)"
-   ],
+   "status": "ok",
+   "issues": [],
    "last_date": "2026-07-01",
    "frequency": "monthly"
   },
@@ -233,10 +266,24 @@
    "frequency": "daily"
   },
   {
-   "id": "NIFTY",
+   "id": "HSI",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-01",
+   "last_date": "2026-10-02",
+   "frequency": "daily"
+  },
+  {
+   "id": "SHCOMP",
+   "status": "ok",
+   "issues": [],
+   "last_date": "2026-09-30",
+   "frequency": "daily"
+  },
+  {
+   "id": "KOSPI",
+   "status": "ok",
+   "issues": [],
+   "last_date": "2026-10-02",
    "frequency": "daily"
   },
   {
@@ -261,13 +308,6 @@
    "frequency": "daily"
   },
   {
-   "id": "USDINR",
-   "status": "ok",
-   "issues": [],
-   "last_date": "2026-10-03",
-   "frequency": "daily"
-  },
-  {
    "id": "EURUSD",
    "status": "ok",
    "issues": [],
@@ -287,6 +327,13 @@
    "issues": [],
    "last_date": "2026-10-03",
    "frequency": "daily"
+  },
+  {
+   "id": "USDCNH",
+   "status": "ok",
+   "issues": [],
+   "last_date": "2026-10-02",
+   "frequency": "unknown"
   },
   {
    "id": "BRENT",

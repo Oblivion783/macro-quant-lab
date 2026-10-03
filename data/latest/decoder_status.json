@@ -1,0 +1,39 @@
+{
+ "ran": "2026-10-03T18:58:55+00:00",
+ "decoded": [
+  {
+   "bank": "fed",
+   "date": "2026-04-29",
+   "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260429a.htm",
+   "tone": -0.6,
+   "previous": null
+  },
+  {
+   "bank": "fed",
+   "date": "2026-06-17",
+   "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm",
+   "tone": 1.0,
+   "previous": "2026-04-29",
+   "delta": 1.6,
+   "changed": 30
+  },
+  {
+   "bank": "fed",
+   "date": "2026-07-29",
+   "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm",
+   "tone": 1.0,
+   "previous": "2026-06-17",
+   "delta": 0.0,
+   "changed": 5
+  },
+  {
+   "bank": "fed",
+   "date": "2026-09-16",
+   "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260916a.htm",
+   "tone": 1.0,
+   "previous": "2026-07-29",
+   "delta": 0.0,
+   "changed": 11
+  }
+ ]
+}
