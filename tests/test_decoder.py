@@ -53,6 +53,13 @@ class TestDecoder(unittest.TestCase):
         items = decoder.parse_feed(xml)
         self.assertEqual(items[0]["date"], "2026-09-16")
 
+    def test_clean_html_bytes_keeps_dashes(self):
+        html = ("<html><head><meta charset='utf-8'></head><body><div id='article'><p>The Committee decided to maintain "
+                "the target range at 3‑1/2 to 3‑3/4 percent — by a 12–0 vote today.</p></div></body></html>").encode("utf-8")
+        text = decoder.clean_html(html)
+        self.assertIn("12–0", text)
+        self.assertNotIn("â", text)
+
     def test_clean_html(self):
         html = ("<html><nav>menu</nav><div id='article'><p>Short</p><p>" + OLD + "</p></div>"
                 "<footer><p>footer text that is long enough to count as a paragraph here</p></footer></html>")

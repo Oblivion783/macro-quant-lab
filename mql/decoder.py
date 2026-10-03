@@ -29,7 +29,9 @@ SENT = re.compile(r"(?<=[.!?])\s+(?=[A-Z(\"'])")
 
 
 # ---------------------------------------------------------------- text
-def clean_html(html: str) -> str:
+def clean_html(html: str | bytes) -> str:
+    """Statement text from a web page. Pass bytes when you can: BeautifulSoup then reads the page's
+    declared charset (servers often omit it from headers, which garbles dashes and quotes)."""
     from bs4 import BeautifulSoup
 
     soup = BeautifulSoup(html, "lxml")
@@ -174,7 +176,7 @@ def decode(bank: str, day: str, url: str, text: str | None = None, cfg: dict | N
     if text is None:
         from .sources import _get
 
-        text = clean_html(_get(url).text)
+        text = clean_html(_get(url).content)
     save_statement(bank, day, url, text)
     prev = previous(bank, day)
     lex = cfg["lexicon"]
