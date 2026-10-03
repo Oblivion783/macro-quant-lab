@@ -1,0 +1,11 @@
+# Install once:  pre-commit install
+# Every commit then runs the compliance gate on the files you are committing.
+repos:
+  - repo: local
+    hooks:
+      - id: compliance-gate
+        name: Compliance gate (no employer or confidential terms)
+        entry: python -m mql.compliance
+        language: system
+        pass_filenames: true
+        types: [text]

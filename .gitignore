@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+# Local-only files
+.compliance-local.txt
+data/mql.duckdb
+data/latest/narrative.json
+data/latest/narrative_audit.json
+# Build outputs
+site/
+audio/
+docs/audio/
+docs/podcast.xml
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

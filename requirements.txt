@@ -1,0 +1,16 @@
+# Core pipeline
+pandas>=2.2
+numpy>=1.26
+requests>=2.31
+pyyaml>=6.0
+matplotlib>=3.8
+beautifulsoup4>=4.12
+lxml>=5.0
+# Optional extras (each module works without them, but the workflows use them)
+duckdb>=1.0          # SQL over the history store: python -m mql.store --duckdb
+yfinance>=0.2.40     # fallback if Yahoo's chart API refuses a request
+edge-tts>=6.1        # podcast audio
+# Site and tooling
+mkdocs>=1.6
+mkdocs-material>=9.5
+pre-commit>=3.7

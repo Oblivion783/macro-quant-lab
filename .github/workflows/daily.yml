@@ -1,0 +1,107 @@
+# Daily Macro Desk: weekdays at 00:17 UTC (05:47 IST), before the 06:37 Claude brief reads the snapshot.
+#
+# Repository settings this workflow relies on:
+#   Variable PUBLISH_ENABLED = "true"   only after your employer's outside-activity check (until then: data only)
+#   Secret   GEMINI_API_KEY             optional, free key from Google AI Studio (AI-written narrative)
+#   Secret   COMPLIANCE_TERMS           comma-separated private terms the compliance gate must block
+#   Pages    Source = GitHub Actions    (Settings > Pages) for the public site and podcast feed
+name: Daily Macro Desk
+
+on:
+  schedule:
+    - cron: "17 0 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+
+      - name: Data, snapshot and brief
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/run_daily.py ${{ vars.PUBLISH_ENABLED == 'true' && '--publish' || '' }}
+
+      - name: Central Bank Decoder (new Fed statements)
+        continue-on-error: true
+        run: python -m mql.decoder --check-feeds ${{ vars.PUBLISH_ENABLED != 'true' && '--no-publish' || '' }}
+
+      - name: Model portfolio prices and NAV
+        continue-on-error: true
+        run: python -m mql.portfolio --update-prices --run
+
+      - name: Compliance gate
+        env:
+          COMPLIANCE_TERMS: ${{ secrets.COMPLIANCE_TERMS }}
+        run: python -m mql.compliance
+
+      - name: Commit results
+        run: |
+          git config user.name "mql-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data docs README.md
+          if git diff --cached --quiet; then echo "Nothing to commit"; exit 0; fi
+          git commit -m "Daily run $(date -u +%F)"
+          git pull --rebase --autostash
+          git push
+
+      - name: Restore recent audio episodes
+        if: vars.PUBLISH_ENABLED == 'true'
+        uses: actions/cache/restore@v4
+        with:
+          path: audio
+          key: podcast-${{ github.run_id }}
+          restore-keys: podcast-
+
+      - name: Audio brief and podcast feed
+        if: vars.PUBLISH_ENABLED == 'true'
+        continue-on-error: true
+        run: |
+          python -m mql.podcast --audio-dir audio --keep 7
+          mkdir -p docs/audio
+          cp audio/*.mp3 docs/audio/ || true
+          cp audio/podcast.xml docs/podcast.xml || true
+
+      - name: Save audio episodes
+        if: vars.PUBLISH_ENABLED == 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: audio
+          key: podcast-${{ github.run_id }}
+
+      - name: Build site
+        if: vars.PUBLISH_ENABLED == 'true'
+        run: mkdocs build
+
+      - name: Upload site
+        if: vars.PUBLISH_ENABLED == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: run
+    if: vars.PUBLISH_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,65 @@
+import tempfile
+import unittest
+from datetime import date
+from pathlib import Path
+
+import pandas as pd
+
+from mql import quality, store
+from tests.helpers import mini_panel, mini_watchlist, random_walk
+
+
+class TestStore(unittest.TestCase):
+    def test_merge_prefers_fresh_values(self):
+        old = pd.Series([1.0, 2.0, 3.0], index=pd.to_datetime(["2026-01-01", "2026-01-02", "2026-01-05"]), name="X")
+        new = pd.Series([2.5, 4.0], index=pd.to_datetime(["2026-01-02", "2026-01-06"]), name="X")
+        m = store.merge(old, new)
+        self.assertEqual(list(m.values), [1.0, 2.5, 3.0, 4.0])
+
+    def test_roundtrip_and_derived(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            p = mini_panel()
+            for c in ["UST_2Y", "UST_10Y", "SPX", "VIX", "US_HY_OAS"]:
+                store.save_series(p[c].rename(c), root)
+            panel = store.load_panel(mini_watchlist(), root)
+            self.assertIn("US_2S10S", panel)
+            self.assertAlmostEqual(panel["US_2S10S"].iloc[-1], panel["UST_10Y"].iloc[-1] - panel["UST_2Y"].iloc[-1], places=4)
+            starts = store.fetch_starts(mini_watchlist(), root=root)
+            self.assertEqual(starts["UST_2Y"], "2026-09-22")
+
+
+class TestQuality(unittest.TestCase):
+    def test_ok_series(self):
+        r = quality.check_series(random_walk(name="UST_10Y"), "pct", date(2026, 10, 5))
+        self.assertEqual(r["status"], "ok", r["issues"])
+
+    def test_stale(self):
+        r = quality.check_series(random_walk(end="2026-09-01", name="UST_10Y"), "pct", date(2026, 10, 5))
+        self.assertEqual(r["status"], "warn")
+        self.assertIn("stale", r["issues"][0])
+
+    def test_out_of_range_fails(self):
+        s = random_walk(name="UST_10Y")
+        s.iloc[-10] = 99.0
+        r = quality.check_series(s, "pct", date(2026, 10, 5))
+        self.assertEqual(r["status"], "fail")
+
+    def test_jump_flagged(self):
+        s = random_walk(name="UST_10Y", step=0.03)
+        s.iloc[-1] = s.iloc[-2] + 1.5
+        r = quality.check_series(s, "pct", date(2026, 10, 5))
+        self.assertTrue(any("normal day" in i for i in r["issues"]))
+
+    def test_download_error(self):
+        r = quality.check_series(pd.Series(dtype=float, name="X"), "pct", date(2026, 10, 5), error="HTTP 500")
+        self.assertEqual(r["status"], "fail")
+
+    def test_report(self):
+        rep = quality.run_checks(mini_panel(), mini_watchlist(), date(2026, 10, 5))
+        self.assertEqual(sum(rep["counts"].values()), 6)
+        self.assertTrue(quality.summary_line(rep).startswith("Data quality:"))
+
+
+if __name__ == "__main__":
+    unittest.main()

@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - name: Compliance gate
+        env:
+          COMPLIANCE_TERMS: ${{ secrets.COMPLIANCE_TERMS }}
+        run: python -m mql.compliance
+      - name: Tests
+        run: python -m unittest discover -s tests -t . -v

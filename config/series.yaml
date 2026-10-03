@@ -1,0 +1,85 @@
+# Watchlist for the Daily Macro Desk (Project 1).
+#
+# Each series has:
+#   id      short name used everywhere (files, charts, snapshot)
+#   source  fred | boe | ecb | yahoo | derived
+#   code    the source's own series code (FRED id, BoE IADB code, ECB key, Yahoo ticker)
+#   unit    pct     = a yield or rate in percent; changes reported in basis points
+#           spread  = a difference of two yields in percentage points; shown and changed in bp
+#           price   = an index, FX rate or commodity price; changes reported in percent
+#           level   = an index read as a level (VIX, MOVE); changes in points
+#   group   rates_us | rates_uk | rates_eur | rates_in | inflation | credit | equity | fx | commodities | vol | curve
+#   show    false keeps a series out of the snapshot table (still stored and charted)
+#
+# Verify any code you add at its source before relying on it. The data-quality report
+# (data/latest/quality.json) flags series that fail to download or go stale.
+
+series:
+  # --- US Treasuries and money markets (FRED, no key needed) ---
+  - {id: UST_3M,  source: fred, code: DGS3MO, name: "US 3m T-bill",          unit: pct, group: rates_us}
+  - {id: UST_2Y,  source: fred, code: DGS2,   name: "US 2y Treasury",        unit: pct, group: rates_us}
+  - {id: UST_5Y,  source: fred, code: DGS5,   name: "US 5y Treasury",        unit: pct, group: rates_us}
+  - {id: UST_10Y, source: fred, code: DGS10,  name: "US 10y Treasury",       unit: pct, group: rates_us}
+  - {id: UST_30Y, source: fred, code: DGS30,  name: "US 30y Treasury",       unit: pct, group: rates_us}
+  - {id: SOFR,    source: fred, code: SOFR,   name: "SOFR",                  unit: pct, group: rates_us}
+  # Curve points used only for the curve chart
+  - {id: UST_1M,  source: fred, code: DGS1MO, name: "US 1m",  unit: pct, group: curve, show: false}
+  - {id: UST_6M,  source: fred, code: DGS6MO, name: "US 6m",  unit: pct, group: curve, show: false}
+  - {id: UST_1Y,  source: fred, code: DGS1,   name: "US 1y",  unit: pct, group: curve, show: false}
+  - {id: UST_3Y,  source: fred, code: DGS3,   name: "US 3y",  unit: pct, group: curve, show: false}
+  - {id: UST_7Y,  source: fred, code: DGS7,   name: "US 7y",  unit: pct, group: curve, show: false}
+  - {id: UST_20Y, source: fred, code: DGS20,  name: "US 20y", unit: pct, group: curve, show: false}
+
+  # --- Inflation and real yields ---
+  - {id: US_10Y_REAL, source: fred, code: DFII10, name: "US 10y real yield (TIPS)", unit: pct, group: inflation}
+  - {id: US_10Y_BE,   source: fred, code: T10YIE, name: "US 10y breakeven",         unit: pct, group: inflation}
+  - {id: US_5Y5Y,     source: fred, code: T5YIFR, name: "US 5y5y forward inflation", unit: pct, group: inflation}
+
+  # --- UK gilts (Bank of England yield curves, daily; codes: IUD + S/M/L tenor + N/R/I + ZC) ---
+  - {id: UK_5Y,       source: boe, code: IUDSNZC, name: "UK 5y gilt (zero coupon)",  unit: pct, group: rates_uk}
+  - {id: UK_10Y,      source: boe, code: IUDMNZC, name: "UK 10y gilt (zero coupon)", unit: pct, group: rates_uk}
+  - {id: UK_20Y,      source: boe, code: IUDLNZC, name: "UK 20y gilt (zero coupon)", unit: pct, group: rates_uk}
+  - {id: UK_10Y_REAL, source: boe, code: IUDMRZC, name: "UK 10y real yield",         unit: pct, group: inflation}
+  - {id: UK_10Y_BE,   source: boe, code: IUDMIZC, name: "UK 10y implied inflation",  unit: pct, group: inflation}
+  - {id: SONIA,       source: boe, code: IUDSOIA, name: "SONIA",                     unit: pct, group: rates_uk}
+
+  # --- Euro area (ECB Data Portal; AAA government curve as the Bund proxy) ---
+  - {id: EUR_2Y,  source: ecb, code: "YC/B.U2.EUR.4F.G_N_A.SV_C_YM.SR_2Y",  name: "Euro AAA 2y",  unit: pct, group: rates_eur}
+  - {id: EUR_10Y, source: ecb, code: "YC/B.U2.EUR.4F.G_N_A.SV_C_YM.SR_10Y", name: "Euro AAA 10y", unit: pct, group: rates_eur}
+  - {id: ESTR,    source: ecb, code: "EST/B.EU000A2X2A25.WT",               name: "€STR",         unit: pct, group: rates_eur}
+
+  # --- India (monthly OECD series on FRED until Project 5 adds daily G-sec data) ---
+  - {id: IN_10Y_M, source: fred, code: INDIRLTLT01STM, name: "India 10y G-sec (monthly)", unit: pct, group: rates_in}
+
+  # --- Credit (ICE BofA option-adjusted spreads on FRED, in percent) ---
+  - {id: US_IG_OAS, source: fred, code: BAMLC0A0CM,   name: "US IG credit spread",  unit: spread, group: credit}
+  - {id: US_HY_OAS, source: fred, code: BAMLH0A0HYM2, name: "US high-yield spread", unit: spread, group: credit}
+
+  # --- Equities, volatility, FX, commodities (Yahoo Finance via yfinance) ---
+  - {id: SPX,    source: yahoo, code: "^GSPC",     name: "S&P 500",        unit: price, group: equity}
+  - {id: NDX,    source: yahoo, code: "^NDX",      name: "Nasdaq 100",     unit: price, group: equity}
+  - {id: SX5E,   source: yahoo, code: "^STOXX50E", name: "Euro Stoxx 50",  unit: price, group: equity}
+  - {id: FTSE,   source: yahoo, code: "^FTSE",     name: "FTSE 100",       unit: price, group: equity}
+  - {id: NIKKEI, source: yahoo, code: "^N225",     name: "Nikkei 225",     unit: price, group: equity}
+  - {id: NIFTY,  source: yahoo, code: "^NSEI",     name: "Nifty 50",       unit: price, group: equity}
+  - {id: VIX,    source: yahoo, code: "^VIX",      name: "VIX",            unit: level, group: vol}
+  - {id: MOVE,   source: yahoo, code: "^MOVE",     name: "MOVE (rates vol)", unit: level, group: vol}
+  - {id: DXY,    source: yahoo, code: "DX-Y.NYB",  name: "Dollar index",   unit: price, group: fx}
+  - {id: USDINR, source: yahoo, code: "INR=X",     name: "USD/INR",        unit: price, group: fx}
+  - {id: EURUSD, source: yahoo, code: "EURUSD=X",  name: "EUR/USD",        unit: price, group: fx}
+  - {id: GBPUSD, source: yahoo, code: "GBPUSD=X",  name: "GBP/USD",        unit: price, group: fx}
+  - {id: USDJPY, source: yahoo, code: "JPY=X",     name: "USD/JPY",        unit: price, group: fx}
+  - {id: BRENT,  source: yahoo, code: "BZ=F",      name: "Brent crude",    unit: price, group: commodities}
+  - {id: GOLD,   source: yahoo, code: "GC=F",      name: "Gold",           unit: price, group: commodities}
+  - {id: COPPER, source: yahoo, code: "HG=F",      name: "Copper",         unit: price, group: commodities}
+
+# Series computed from the ones above: id = a - b
+derived:
+  - {id: US_2S10S,  a: UST_10Y, b: UST_2Y,  name: "US 2s10s curve",            unit: spread, group: rates_us}
+  - {id: US_5S30S,  a: UST_30Y, b: UST_5Y,  name: "US 5s30s curve",            unit: spread, group: rates_us}
+  - {id: UK_US_10Y, a: UK_10Y,  b: UST_10Y, name: "UK minus US 10y",           unit: spread, group: rates_uk}
+  - {id: UK_5S20S,  a: UK_20Y,  b: UK_5Y,   name: "UK 5s20s curve",            unit: spread, group: rates_uk}
+  - {id: EUR_2S10S, a: EUR_10Y, b: EUR_2Y,  name: "Euro AAA 2s10s curve",      unit: spread, group: rates_eur}
+
+# History to keep on the first download (later runs only append)
+history_start: "2018-01-01"

@@ -1,0 +1,34 @@
+# Compliance gate: blocks a commit or a CI run when a public file contains these patterns.
+#
+# Two kinds of terms:
+# 1. Generic patterns below (safe to publish).
+# 2. Private terms: employer, product, system, client and colleague names. NEVER list them here
+#    (this file is public). Put them in .compliance-local.txt (git-ignored, one per line) on your
+#    laptop and in the GitHub Actions secret COMPLIANCE_TERMS (comma-separated). Matches on
+#    private terms are reported as "private term #n" so CI logs never print them.
+
+patterns:
+  - "confidential"
+  - "internal use only"
+  - "internal only"
+  - "do not distribute"
+  - "not for distribution"
+  - "for internal"
+  - "proprietary"
+  - "client name"
+  - "inside information"
+  - "material non-public"
+  - "\\bMNPI\\b"
+  - "strictly private"
+
+# Lines containing any of these are ignored (e.g. the disclaimer or this tool's own docs).
+allow:
+  - "not those of any employer"
+  - "compliance gate"
+  - "compliance.yaml"
+  - "COMPLIANCE_TERMS"
+  - "private term"
+
+# Only these file types are scanned (generated market data under data/ is skipped).
+extensions: [".md", ".txt", ".py", ".yaml", ".yml", ".ipynb", ".html", ".toml", ".cfg", ".sql"]
+skip_dirs: ["data/history", "data/latest", "data/portfolio", ".git", ".venv", "site", "audio"]

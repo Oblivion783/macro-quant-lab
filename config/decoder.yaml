@@ -1,0 +1,59 @@
+# Central Bank Decoder (Project 2) settings.
+#
+# feed: an RSS feed the daily job checks for new statements (only where one is reliable).
+# For banks without a feed, run by hand after each meeting:
+#   python -m mql.decoder --bank boe --url <statement page> --date YYYY-MM-DD
+#
+# The lexicon is a starting point. Project 2's real work is hand-labelling ~30 past statements
+# (data/statements/labels.csv) and tuning these lists until the score agrees with you.
+
+banks:
+  fed:
+    name: Federal Reserve (FOMC)
+    feed: https://www.federalreserve.gov/feeds/press_monetary.xml
+    title_match: "FOMC statement"
+  boe:
+    name: Bank of England (MPC)
+    feed: null
+  ecb:
+    name: European Central Bank
+    feed: null
+  rbi:
+    name: Reserve Bank of India (MPC)
+    feed: null
+
+lexicon:
+  hawkish:
+    "inflation remains elevated": 2
+    "inflation remained elevated": 2
+    "upside risks to inflation": 2
+    "further policy firming": 3
+    "additional policy firming": 3
+    "raise the target range": 3
+    "increase bank rate": 3
+    "increase the policy repo rate": 3
+    "restrictive": 1
+    "sufficiently restrictive": 2
+    "tightening": 1
+    "strong labor market": 1
+    "solid pace": 1
+    "persistent": 1
+    "second-round effects": 1
+    "vigilant": 1
+    "withdrawal of accommodation": 2
+  dovish:
+    "lower the target range": 3
+    "reduce bank rate": 3
+    "reduce the policy repo rate": 3
+    "cut": 1
+    "easing": 1
+    "downside risks": 2
+    "labor market has softened": 2
+    "job gains have slowed": 2
+    "unemployment rate has moved up": 2
+    "moderated": 1
+    "inflation has eased": 2
+    "progress toward": 1
+    "accommodative": 1
+    "support the economy": 1
+    "weaker": 1

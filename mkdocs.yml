@@ -1,0 +1,45 @@
+site_name: Macro Quant Lab
+site_description: A daily, public-data read of rates, credit, equities and FX, plus a central-bank decoder and a paper model portfolio.
+site_url: https://oblivion783.github.io/macro-quant-lab/
+repo_url: https://github.com/Oblivion783/macro-quant-lab
+edit_uri: ""
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: blue grey
+      accent: blue
+      toggle: {icon: material/weather-night, name: Dark mode}
+    - scheme: slate
+      primary: blue grey
+      accent: blue
+      toggle: {icon: material/weather-sunny, name: Light mode}
+  features:
+    - navigation.tabs
+    - navigation.top
+nav:
+  - Today: index.md
+  - Monitor: monitor.md
+  - Archive: brief/index.md
+  - Decoder: decoder/index.md
+  - Portfolio: portfolio/index.md
+  - Notes: notes/index.md
+  - Modules: modules/index.md
+  - About: about.md
+markdown_extensions:
+  - tables
+  - admonition
+  - toc:
+      permalink: true
+not_in_nav: |
+  /brief/20*.md
+  /decoder/*-20*.md
+  /portfolio/factsheet-*.md
+  /portfolio/ips.md
+  /notes/20*.md
+  /notes/_template.md
+  /modules/0*.md
+validation:
+  links:
+    not_found: info
+    unrecognized_links: info
