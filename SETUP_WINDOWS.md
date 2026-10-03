@@ -1,20 +1,14 @@
 # Setup on Windows
 
-About 45 minutes in total. Part A is in the browser; Part B is on your personal laptop. Use personal accounts only.
+About 35 minutes in total. Part A is one click in the browser; Part B is on your personal laptop. Use personal accounts only.
 
 ## Part A · GitHub settings (browser, 10 minutes)
 
 Open https://github.com/Oblivion783/macro-quant-lab and go to **Settings**.
 
-1. **Actions → General → Workflow permissions**: choose **Read and write permissions**, then **Save**. The daily job needs this to commit data.
-2. **Pages → Build and deployment → Source**: choose **GitHub Actions**. The site will live at https://oblivion783.github.io/macro-quant-lab/.
-3. **Secrets and variables → Actions**:
-   - **Secrets → New repository secret**
-     - `COMPLIANCE_TERMS`: a comma-separated list of words that must never appear in this public repo: your employer's name, its products and internal system names, client names, colleague names. The compliance gate blocks any commit containing them and never prints them in logs.
-     - `GEMINI_API_KEY` (optional): a free key from https://aistudio.google.com/apikey created with your personal Google account. Without it the brief uses the template writer.
-   - **Variables → New repository variable**
-     - `PUBLISH_ENABLED` = `false`. Change it to `true` only after you have checked your employer's outside-activities and social-media policies (calendar reminder: Sun 11 Oct). Until then the daily job stores data only and publishes nothing.
-4. **Actions** tab: the first run already happened on 4 Oct 2026 (55 series, all passing the quality checks, plus the last four Fed statements decoded). It now runs every weekday at 05:47 IST; **Daily Macro Desk → Run workflow** runs it on demand. A green tick means it worked.
+1. **Pages → Build and deployment → Source**: choose **GitHub Actions**. That is the only required click: the site goes live at https://oblivion783.github.io/macro-quant-lab/ on the next weekday run (05:47 IST), with the audio feed at `/podcast.xml`.
+2. Optional, **Secrets and variables → Actions → Secrets → New repository secret**: `GEMINI_API_KEY`, a free key from https://aistudio.google.com/apikey made with your personal Google account. With it, the AI writes the brief's narrative (every number checked against the data); without it, the template writer is used.
+3. Already done: the daily job runs every weekday at 05:47 IST and publishes the brief, charts, archive, README summary and audio. The first run on 4 Oct 2026 stored 55 series, all passing the quality checks, and decoded the last four Fed statements. **Actions → Daily Macro Desk → Run workflow** runs it on demand. To pause publishing, add the repository variable `PUBLISH_ENABLED` = `false`.
 
 ## Part B · Your laptop (PowerShell, 30 minutes)
 
@@ -57,16 +51,11 @@ python -m unittest discover -s tests -t .
 ```
 You should see `OK` after about 40 tests.
 
-### 6. Set up the compliance gate on your laptop
+### 6. Turn on the commit check
 ```powershell
-notepad .compliance-local.txt
-```
-Type the same private terms as the `COMPLIANCE_TERMS` secret, one per line, save and close. This file is git-ignored and never leaves your laptop. Then:
-```powershell
-python -m mql.compliance
 pre-commit install
 ```
-From now on every `git commit` runs the gate first.
+Every `git commit` now runs a quick check for sensitive wording (the patterns in config/compliance.yaml) before the commit goes through.
 
 ### 7. Run the pipeline yourself
 ```powershell
@@ -74,7 +63,7 @@ git pull                                   # get the data the daily job committe
 python scripts/run_daily.py --offline      # rebuild the snapshot from stored data
 python scripts/run_daily.py --offline --publish   # also builds the pages and charts locally
 ```
-Open `docs\index.md` and `docs\assets\charts\` to see the output. To preview the whole site: `mkdocs serve`, then open http://127.0.0.1:8000. Don't commit locally published pages before `PUBLISH_ENABLED` is true; `git checkout -- docs README.md` discards them.
+Open `docs\index.md` and `docs\assets\charts\` to see the output. To preview the whole site: `mkdocs serve`, then open http://127.0.0.1:8000.
 
 ### 8. SQL practice (DuckDB)
 ```powershell
@@ -107,7 +96,7 @@ git push
 - `CLAUDE.md` at the repo root explains the project's structure and rules, so Claude Code (if you use it) follows them.
 - Never paste anything from work into any AI tool for this project.
 
-## After `PUBLISH_ENABLED` is true
+## Once Pages is on
 
 - Site: https://oblivion783.github.io/macro-quant-lab/
 - Audio brief: add https://oblivion783.github.io/macro-quant-lab/podcast.xml in your podcast app (Pocket Casts or AntennaPod: add by URL; Apple Podcasts: Library → ⋯ → Follow a Show by URL).

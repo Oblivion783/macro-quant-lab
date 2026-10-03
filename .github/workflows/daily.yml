@@ -1,10 +1,10 @@
 # Daily Macro Desk: weekdays at 00:17 UTC (05:47 IST), before the 06:37 Claude brief reads the snapshot.
 #
 # Repository settings this workflow relies on:
-#   Variable PUBLISH_ENABLED = "true"   only after your employer's outside-activity check (until then: data only)
-#   Secret   GEMINI_API_KEY             optional, free key from Google AI Studio (AI-written narrative)
-#   Secret   COMPLIANCE_TERMS           comma-separated private terms the compliance gate must block
 #   Pages    Source = GitHub Actions    (Settings > Pages) for the public site and podcast feed
+#   Secret   GEMINI_API_KEY             optional, free key from Google AI Studio (AI-written narrative)
+#   Variable PUBLISH_ENABLED = "false"  optional: set it only to pause publishing (data keeps updating)
+#   Secret   COMPLIANCE_TERMS           optional extra words for the compliance gate
 name: Daily Macro Desk
 
 on:
@@ -36,11 +36,11 @@ jobs:
       - name: Data, snapshot and brief
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-        run: python scripts/run_daily.py ${{ vars.PUBLISH_ENABLED == 'true' && '--publish' || '' }}
+        run: python scripts/run_daily.py ${{ vars.PUBLISH_ENABLED != 'false' && '--publish' || '' }}
 
       - name: Central Bank Decoder (new Fed statements)
         continue-on-error: true
-        run: python -m mql.decoder --check-feeds ${{ vars.PUBLISH_ENABLED != 'true' && '--no-publish' || '' }}
+        run: python -m mql.decoder --check-feeds ${{ vars.PUBLISH_ENABLED == 'false' && '--no-publish' || '' }}
 
       - name: Model portfolio prices and NAV
         continue-on-error: true
@@ -62,7 +62,7 @@ jobs:
           git push
 
       - name: Restore recent audio episodes
-        if: vars.PUBLISH_ENABLED == 'true'
+        if: vars.PUBLISH_ENABLED != 'false'
         uses: actions/cache/restore@v4
         with:
           path: audio
@@ -70,7 +70,7 @@ jobs:
           restore-keys: podcast-
 
       - name: Audio brief and podcast feed
-        if: vars.PUBLISH_ENABLED == 'true'
+        if: vars.PUBLISH_ENABLED != 'false'
         continue-on-error: true
         run: |
           python -m mql.podcast --audio-dir audio --keep 7
@@ -79,25 +79,25 @@ jobs:
           cp audio/podcast.xml docs/podcast.xml || true
 
       - name: Save audio episodes
-        if: vars.PUBLISH_ENABLED == 'true'
+        if: vars.PUBLISH_ENABLED != 'false'
         uses: actions/cache/save@v4
         with:
           path: audio
           key: podcast-${{ github.run_id }}
 
       - name: Build site
-        if: vars.PUBLISH_ENABLED == 'true'
+        if: vars.PUBLISH_ENABLED != 'false'
         run: mkdocs build
 
       - name: Upload site
-        if: vars.PUBLISH_ENABLED == 'true'
+        if: vars.PUBLISH_ENABLED != 'false'
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
 
   deploy:
     needs: run
-    if: vars.PUBLISH_ENABLED == 'true'
+    if: vars.PUBLISH_ENABLED != 'false'
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -105,3 +105,4 @@ jobs:
     steps:
       - id: deployment
         uses: actions/deploy-pages@v4
+        continue-on-error: true   # until Pages is switched on in Settings, this step is skipped quietly

@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   factsheet:
-    if: vars.PUBLISH_ENABLED == 'true'
+    if: vars.PUBLISH_ENABLED != 'false'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5

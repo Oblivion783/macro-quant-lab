@@ -5,7 +5,7 @@ A daily, public-data read of rates, credit, equities and FX, a central-bank deco
 ## Today's brief
 
 <!-- BRIEF:START -->
-The first brief appears here after the daily run is switched on.
+The first brief appears here after the next weekday run (05:47 IST).
 <!-- BRIEF:END -->
 
 ## What's inside
