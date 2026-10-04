@@ -5,7 +5,22 @@ A daily, public-data read of rates, credit, equities and FX, a central-bank deco
 ## Today's brief
 
 <!-- BRIEF:START -->
-The first brief appears here after the next weekday run (05:47 IST).
+**Sun 04 Oct 2026 · Euro AAA 2s10s curve rose 6 bp to 49 bp, about 3.1x a normal day's move**
+
+- US high-yield spread rose 12 bp to 324 bp, about 2.2x a normal day's move.
+- Hang Seng lost 2.60% to 23,972, about 2.2x a normal day's move.
+- US 2y Treasury fell 10 bp to 4.78%, about 2.1x a normal day's move.
+- US 2s10s curve rose 5 bp to 46 bp, about 1.9x a normal day's move.
+- EUR/USD lost 0.62% to 1.1258, about 1.8x a normal day's move.
+
+**India**
+
+- Nifty 50 lost 0.88% to 22,422.
+- Sensex lost 0.79% to 71,910.
+- Nifty Bank lost 0.33% to 54,451.
+- India VIX gained 0.97 to 14.46.
+
+[Full brief, charts and table →](https://oblivion783.github.io/macro-quant-lab/) · [Archive](https://oblivion783.github.io/macro-quant-lab/brief/)
 <!-- BRIEF:END -->
 
 ## What's inside
