@@ -62,7 +62,11 @@ def load_yaml(name: str) -> dict:
 
 
 def load_watchlist(path: Path | None = None) -> Watchlist:
-    raw = yaml.safe_load(open(path, encoding="utf-8")) if path else load_yaml("series.yaml")
+    if path:
+        with open(path, encoding="utf-8") as f:
+            raw = yaml.safe_load(f)
+    else:
+        raw = load_yaml("series.yaml")
     items: list[Series] = []
     for s in raw.get("series", []):
         items.append(Series(id=s["id"], source=s["source"], code=str(s["code"]), name=s["name"],

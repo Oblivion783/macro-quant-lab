@@ -95,6 +95,37 @@ def to_duckdb(watchlist, db_path: Path | None = None, root: Path | None = None) 
     return db_path
 
 
+def split_sql(text: str) -> list[tuple[str, str]]:
+    """Split a .sql file into (title, query) pairs.
+
+    Comment lines (starting with --) are never searched for ';', so a semicolon in a note
+    cannot cut a query in half. A query's title is the last comment line just before it.
+    """
+    out: list[tuple[str, str]] = []
+    buf: list[str] = []
+    title = ""
+
+    def flush() -> None:
+        q = "\n".join(buf).strip()
+        if q:
+            out.append((title or q.splitlines()[0], q))
+
+    for line in text.splitlines():
+        if line.strip().startswith("--"):
+            if not buf:
+                title = line.strip().lstrip("-").strip()
+            continue
+        while ";" in line:
+            head, line = line.split(";", 1)
+            buf.append(head)
+            flush()
+            buf, title = [], ""
+        if line.strip():
+            buf.append(line)
+    flush()
+    return out
+
+
 if __name__ == "__main__":
     ap = argparse.ArgumentParser(description="History store utilities")
     ap.add_argument("--duckdb", action="store_true", help="build data/mql.duckdb for SQL practice")

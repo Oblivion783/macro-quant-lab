@@ -59,7 +59,8 @@ def load_decisions(path: Path | None = None) -> list[tuple[pd.Timestamp, dict[st
     path = path or (config.PORTFOLIO_DATA / "decisions.csv")
     if not path.exists():
         return []
-    rows = list(csv.DictReader(open(path, encoding="utf-8")))
+    with open(path, encoding="utf-8", newline="") as f:
+        rows = list(csv.DictReader(f))
     by: dict[str, dict] = {}
     notes: dict[str, str] = {}
     for r in rows:

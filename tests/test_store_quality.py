@@ -85,3 +85,16 @@ class TestDuckDB(unittest.TestCase):
             self.assertGreater(con.execute("SELECT count(*) FROM obs").fetchone()[0], 0)
             self.assertGreater(con.execute("SELECT count(*) FROM wide").fetchone()[0], 0)
             con.close()
+
+
+class TestSplitSql(unittest.TestCase):
+    def test_semicolon_in_comment_is_ignored(self):
+        text = "-- note; with a semicolon\n-- 1. First\nSELECT 1;\n\n-- 2. Second\nSELECT\n  2\n;\n-- trailing\n"
+        self.assertEqual(store.split_sql(text), [("1. First", "SELECT 1"), ("2. Second", "SELECT\n  2")])
+
+    def test_practice_file(self):
+        text = (Path(__file__).resolve().parents[1] / "notebooks" / "sql_practice.sql").read_text(encoding="utf-8")
+        parts = store.split_sql(text)
+        self.assertEqual([t.split(".")[0] for t, _ in parts], ["1", "2", "3", "4", "5"])
+        for _, q in parts:
+            self.assertTrue(q.lstrip().upper().startswith("SELECT"), q)

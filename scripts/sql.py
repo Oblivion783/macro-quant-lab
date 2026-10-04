@@ -8,6 +8,9 @@ from pathlib import Path
 
 import duckdb
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from mql.store import split_sql  # noqa: E402
+
 DB = Path(__file__).resolve().parents[1] / "data" / "mql.duckdb"
 
 if __name__ == "__main__":
@@ -15,8 +18,17 @@ if __name__ == "__main__":
         sys.exit(__doc__)
     arg = sys.argv[1]
     text = Path(arg).read_text(encoding="utf-8") if arg.endswith(".sql") else arg
+    if not DB.exists():
+        sys.exit(f"{DB} not found. Build it first:  python -m mql.store --duckdb")
     con = duckdb.connect(str(DB), read_only=True)
-    for q in [q.strip() for q in text.split(";") if q.strip() and not all(l.strip().startswith("--") for l in q.strip().splitlines())]:
-        title = next((l.strip("- ").strip() for l in q.splitlines() if l.strip().startswith("--")), q.splitlines()[0])
+    failed = 0
+    for title, q in split_sql(text):
         print(f"\n=== {title}")
-        print(con.sql(q))
+        try:
+            print(con.sql(q))
+        except duckdb.Error as e:  # one bad query should not hide the rest
+            failed += 1
+            print(f"Error: {e}")
+    con.close()
+    if failed:
+        sys.exit(f"\n{failed} query(ies) failed.")

@@ -238,7 +238,8 @@ def evaluate(labels_csv: Path | None = None, cfg: dict | None = None) -> dict:
     """Compare the lexicon's read with your hand labels (bank,date,label: hawkish|neutral|dovish)."""
     cfg = cfg or config.load_yaml("decoder.yaml")
     labels_csv = labels_csv or (config.STATEMENTS / "labels.csv")
-    rows = list(csv.DictReader(open(labels_csv, encoding="utf-8")))
+    with open(labels_csv, encoding="utf-8", newline="") as f:
+        rows = list(csv.DictReader(f))
     agree, total, misses = 0, 0, []
     for r in rows:
         cur = bank_dir(r["bank"]) / f"{r['date']}.txt"
