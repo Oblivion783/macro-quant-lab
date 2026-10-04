@@ -89,7 +89,8 @@ def to_duckdb(watchlist, db_path: Path | None = None, root: Path | None = None) 
     con = duckdb.connect(str(db_path))
     con.execute("CREATE OR REPLACE TABLE obs AS SELECT * FROM long")
     con.execute("CREATE OR REPLACE TABLE series AS SELECT * FROM meta")
-    con.execute("CREATE OR REPLACE VIEW wide AS PIVOT obs ON series_id USING first(value) GROUP BY date ORDER BY date")
+    # a table, not a view: DuckDB cannot build a PIVOT view whose columns come from the data
+    con.execute("CREATE OR REPLACE TABLE wide AS PIVOT obs ON series_id USING first(value) GROUP BY date ORDER BY date")
     con.close()
     return db_path
 

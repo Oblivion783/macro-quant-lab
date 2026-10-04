@@ -63,3 +63,25 @@ class TestQuality(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+try:
+    import duckdb
+except ImportError:  # optional dependency
+    duckdb = None
+
+
+@unittest.skipIf(duckdb is None, "duckdb not installed")
+class TestDuckDB(unittest.TestCase):
+    def test_build_and_query(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            wl = mini_watchlist()
+            panel = mini_panel()
+            for c in ["UST_2Y", "UST_10Y", "SPX", "VIX", "US_HY_OAS"]:
+                store.save_series(panel[c].rename(c), root)
+            db = store.to_duckdb(wl, Path(d) / "t.duckdb", root)
+            con = duckdb.connect(str(db))
+            self.assertGreater(con.execute("SELECT count(*) FROM obs").fetchone()[0], 0)
+            self.assertGreater(con.execute("SELECT count(*) FROM wide").fetchone()[0], 0)
+            con.close()

@@ -1,6 +1,6 @@
 -- SQL practice on the Macro Quant Lab store.
 -- Build the database first:  python -m mql.store --duckdb
--- Tables: obs(date, series_id, value), series(series_id, name, source, code, unit, grp); view: wide (one column per series)
+-- Tables: obs(date, series_id, value), series(series_id, name, source, code, unit, grp); table: wide (one column per series)
 -- Run all:  python scripts/sql.py notebooks/sql_practice.sql
 -- Then write five questions of your own below the examples.
 
