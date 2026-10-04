@@ -1,10 +1,10 @@
-# Module 2: Inflation and real assets
+# Module 5: Fixed-income relative value
 
-*Dec 2026 · feeds Inflation page in Project 1*
+*Jul 2027 · feeds Project 4*
 
-**Core concepts:** Breakevens, global linkers, commodities and inflation
+**Core concepts:** Carry and roll, curve trades, rich/cheap, scenario P&L
 
-**Main resources:** BoE Monetary Policy Report; Fed projections
+**Main resources:** Tuckman and Serrat ch. 9–17; LDI experience
 
 ## My two-page note
 

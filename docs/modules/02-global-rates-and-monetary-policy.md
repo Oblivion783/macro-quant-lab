@@ -1,10 +1,10 @@
-# Module 7: Fixed-income relative value
+# Module 2: Global rates and monetary policy
 
-*Jun–Aug 2027 · feeds Project 4*
+*Jan–Feb 2027 · feeds Project 2, version 1*
 
-**Core concepts:** Carry and roll, curve trades, rich/cheap, scenario P&L
+**Core concepts:** Fed, ECB, BoJ and RBI frameworks; term premium; curve regimes
 
-**Main resources:** Tuckman; LDI experience
+**Main resources:** Wang, *Central Banking 101*; Tuckman and Serrat, *Fixed Income Securities* ch. 1–8; central-bank websites
 
 ## My two-page note
 

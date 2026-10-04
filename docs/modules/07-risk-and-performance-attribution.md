@@ -1,10 +1,10 @@
-# Module 5: Equities for a multi-asset PM
+# Module 7: Risk and performance attribution
 
-*Mar 2027 · feeds Equity-sleeve rules in Project 3*
+*Sep 2027 · feeds Attribution in Project 3*
 
-**Core concepts:** Equity risk premium, valuation regimes, factors, stock–bond correlation
+**Core concepts:** Brinson and fixed-income attribution, VaR and expected shortfall, drawdown control
 
-**Main resources:** Ilmanen; Damodaran's implied ERP data
+**Main resources:** Grinold and Kahn; CFA Level III portfolio-management readings
 
 ## My two-page note
 

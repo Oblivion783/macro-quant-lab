@@ -1,10 +1,10 @@
-# Module 9: Risk and performance attribution
+# Module 8: Inflation and real assets
 
-*Sep 2027 · feeds Attribution in Project 3*
+*Oct 2027 (extension) · feeds Inflation page in Project 1*
 
-**Core concepts:** Brinson and fixed-income attribution, VaR and expected shortfall, drawdown control
+**Core concepts:** Breakevens, global linkers, commodities and inflation
 
-**Main resources:** CFA Level III portfolio-management readings
+**Main resources:** Samuelson, *The Great Inflation and Its Aftermath*; BoE Monetary Policy Report; Fed projections
 
 ## My two-page note
 

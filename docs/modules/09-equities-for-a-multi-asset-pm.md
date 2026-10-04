@@ -1,10 +1,10 @@
-# Module 8: India markets
+# Module 9: Equities for a multi-asset PM
 
-*Aug 2027 · feeds Project 5*
+*Nov 2027 (extension) · feeds Equity-sleeve rules in Project 3*
 
-**Core concepts:** RBI framework, G-sec curve, index inclusion and FPI flows, debt-fund universe
+**Core concepts:** Equity risk premium, valuation regimes, factors, stock–bond correlation
 
-**Main resources:** RBI DBIE, CCIL, AMFI disclosures
+**Main resources:** Ilmanen; Damodaran's implied ERP data; CFA Level II equity readings
 
 ## My two-page note
 

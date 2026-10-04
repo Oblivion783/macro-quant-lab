@@ -1,10 +1,10 @@
 # Module 6: Multi-asset portfolio construction
 
-*Jun–Jul 2027 · feeds Project 3, version 2*
+*Aug 2027 · feeds Project 3, version 2*
 
 **Core concepts:** Strategic versus tactical allocation, risk parity, regime frameworks, rebalancing
 
-**Main resources:** Swensen; Ilmanen; CFA Level III preview
+**Main resources:** Swensen; CFA Level III preview
 
 ## My two-page note
 

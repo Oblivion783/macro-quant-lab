@@ -1,10 +1,10 @@
 # Module 3: Credit
 
-*Jan 2027 · feeds Credit tiles in Project 1*
+*Mar 2027 · feeds Credit tiles in Project 1*
 
 **Core concepts:** Spreads versus the default cycle, IG versus HY, CDS
 
-**Main resources:** CFA Level II credit readings
+**Main resources:** Marks, *The Most Important Thing*; CFA Level II credit readings
 
 ## My two-page note
 
