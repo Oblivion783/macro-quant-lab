@@ -1,5 +1,10 @@
 # Daily Macro Desk: weekdays at 00:17 UTC (05:47 IST), before the 06:37 Claude brief reads the snapshot.
 #
+# GitHub treats schedules as best effort: around the top of the hour a scheduled run can start
+# late or not at all. Two backup slots (06:23 and 08:13 IST) start the same workflow, and the
+# "check" job lets a scheduled run through only if no run has succeeded yet today (UTC).
+# A manual "Run workflow" always goes ahead.
+#
 # Repository settings this workflow relies on:
 #   Pages    Source = GitHub Actions    (Settings > Pages) for the public site and podcast feed
 #   Secret   GEMINI_API_KEY             optional, free key from Google AI Studio (AI-written narrative)
@@ -9,20 +14,42 @@ name: Daily Macro Desk
 
 on:
   schedule:
-    - cron: "17 0 * * 1-5"
+    - cron: "17 0 * * 1-5"   # main run, 05:47 IST
+    - cron: "53 0 * * 1-5"   # backup, 06:23 IST (still before the 06:37 brief)
+    - cron: "43 2 * * 1-5"   # backup, 08:13 IST
   workflow_dispatch:
 
 permissions:
   contents: write
   pages: write
   id-token: write
+  actions: read   # lets the check job see today's earlier runs
 
 concurrency:
   group: daily
   cancel-in-progress: false
 
 jobs:
+  check:
+    runs-on: ubuntu-latest
+    outputs:
+      go: ${{ steps.today.outputs.go }}
+    steps:
+      - id: today
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ "${{ github.event_name }}" != "schedule" ]; then
+            echo "go=true" >> "$GITHUB_OUTPUT"; exit 0
+          fi
+          done=$(gh api -X GET "repos/${{ github.repository }}/actions/workflows/daily.yml/runs" \
+                   -f created=">=$(date -u +%F)" -f status=success --jq '.total_count')
+          echo "Successful runs today (UTC): $done"
+          if [ "$done" = "0" ]; then echo "go=true" >> "$GITHUB_OUTPUT"; else echo "go=false" >> "$GITHUB_OUTPUT"; fi
+
   run:
+    needs: check
+    if: needs.check.outputs.go == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:

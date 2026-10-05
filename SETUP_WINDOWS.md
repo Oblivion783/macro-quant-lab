@@ -8,7 +8,7 @@ Open https://github.com/Oblivion783/macro-quant-lab and go to **Settings**.
 
 1. **Pages → Build and deployment → Source**: choose **GitHub Actions**. That is the only required click: the site goes live at https://oblivion783.github.io/macro-quant-lab/ on the next weekday run (05:47 IST), with the audio feed at `/podcast.xml`.
 2. Optional, **Secrets and variables → Actions → Secrets → New repository secret**: `GEMINI_API_KEY`, a free key from https://aistudio.google.com/apikey made with your personal Google account. With it, the AI writes the brief's narrative (every number checked against the data); without it, the template writer is used.
-3. Already done: the daily job runs every weekday at 05:47 IST and publishes the brief, charts, archive, README summary and audio. The first run on 4 Oct 2026 stored 55 series, all passing the quality checks, and decoded the last four Fed statements. **Actions → Daily Macro Desk → Run workflow** runs it on demand. To pause publishing, add the repository variable `PUBLISH_ENABLED` = `false`.
+3. Already done: the daily job runs every weekday at 05:47 IST and publishes the brief, charts, archive, README summary and audio. GitHub sometimes starts scheduled jobs late or skips them, so backup slots at 06:23 and 08:13 IST run it only if the 05:47 run did not happen. GitHub emails you only when a run fails; the morning email comes from the separate 06:37 Claude brief. The first run on 4 Oct 2026 stored 55 series, all passing the quality checks, and decoded the last four Fed statements. **Actions → Daily Macro Desk → Run workflow** runs it on demand. To pause publishing, add the repository variable `PUBLISH_ENABLED` = `false`.
 
 ## Part B · Your laptop (PowerShell, 30 minutes)
 
