@@ -1,5 +1,5 @@
 {
- "asof": "2026-10-04",
+ "asof": "2026-10-05",
  "counts": {
   "ok": 55,
   "warn": 0,
@@ -206,7 +206,7 @@
    "id": "USDINR",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-04",
+   "last_date": "2026-10-05",
    "frequency": "daily"
   },
   {
@@ -262,14 +262,14 @@
    "id": "NIKKEI",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-02",
+   "last_date": "2026-10-05",
    "frequency": "daily"
   },
   {
    "id": "HSI",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-02",
+   "last_date": "2026-10-05",
    "frequency": "daily"
   },
   {
@@ -304,56 +304,56 @@
    "id": "DXY",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-02",
+   "last_date": "2026-10-04",
    "frequency": "daily"
   },
   {
    "id": "EURUSD",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-02",
+   "last_date": "2026-10-05",
    "frequency": "daily"
   },
   {
    "id": "GBPUSD",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-02",
+   "last_date": "2026-10-05",
    "frequency": "daily"
   },
   {
    "id": "USDJPY",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-04",
+   "last_date": "2026-10-05",
    "frequency": "daily"
   },
   {
    "id": "USDCNH",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-02",
+   "last_date": "2026-10-05",
    "frequency": "unknown"
   },
   {
    "id": "BRENT",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-02",
+   "last_date": "2026-10-04",
    "frequency": "daily"
   },
   {
    "id": "GOLD",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-02",
+   "last_date": "2026-10-04",
    "frequency": "daily"
   },
   {
    "id": "COPPER",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-02",
+   "last_date": "2026-10-04",
    "frequency": "daily"
   },
   {

@@ -5,13 +5,13 @@ A daily, public-data read of rates, credit, equities and FX, a central-bank deco
 ## Today's brief
 
 <!-- BRIEF:START -->
-**Sun 04 Oct 2026 · Euro AAA 2s10s curve rose 6 bp to 49 bp, about 3.1x a normal day's move**
+**Mon 05 Oct 2026 · Euro AAA 2s10s curve rose 6 bp to 49 bp, about 3.1x a normal day's move**
 
 - US high-yield spread rose 12 bp to 324 bp, about 2.2x a normal day's move.
-- Hang Seng lost 2.60% to 23,972, about 2.2x a normal day's move.
 - US 2y Treasury fell 10 bp to 4.78%, about 2.1x a normal day's move.
 - US 2s10s curve rose 5 bp to 46 bp, about 1.9x a normal day's move.
-- EUR/USD lost 0.62% to 1.1258, about 1.8x a normal day's move.
+- US IG credit spread rose 2 bp to 86 bp, about 1.8x a normal day's move.
+- US 5s30s curve rose 5 bp to 60 bp, about 1.8x a normal day's move.
 
 **India**
 
