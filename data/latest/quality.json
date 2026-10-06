@@ -1,5 +1,5 @@
 {
- "asof": "2026-10-05",
+ "asof": "2026-10-06",
  "counts": {
   "ok": 55,
   "warn": 0,
@@ -10,203 +10,203 @@
    "id": "UST_3M",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-01",
+   "last_date": "2026-10-02",
    "frequency": "daily"
   },
   {
    "id": "UST_2Y",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-01",
+   "last_date": "2026-10-02",
    "frequency": "daily"
   },
   {
    "id": "UST_5Y",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-01",
+   "last_date": "2026-10-02",
    "frequency": "daily"
   },
   {
    "id": "UST_10Y",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-01",
+   "last_date": "2026-10-02",
    "frequency": "daily"
   },
   {
    "id": "UST_30Y",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-01",
+   "last_date": "2026-10-02",
    "frequency": "daily"
   },
   {
    "id": "SOFR",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-01",
+   "last_date": "2026-10-02",
    "frequency": "daily"
   },
   {
    "id": "UST_1M",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-01",
+   "last_date": "2026-10-02",
    "frequency": "daily"
   },
   {
    "id": "UST_6M",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-01",
+   "last_date": "2026-10-02",
    "frequency": "daily"
   },
   {
    "id": "UST_1Y",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-01",
+   "last_date": "2026-10-02",
    "frequency": "daily"
   },
   {
    "id": "UST_3Y",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-01",
+   "last_date": "2026-10-02",
    "frequency": "daily"
   },
   {
    "id": "UST_7Y",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-01",
+   "last_date": "2026-10-02",
    "frequency": "daily"
   },
   {
    "id": "UST_20Y",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-01",
+   "last_date": "2026-10-02",
    "frequency": "daily"
   },
   {
    "id": "US_10Y_REAL",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-01",
+   "last_date": "2026-10-02",
    "frequency": "daily"
   },
   {
    "id": "US_10Y_BE",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-02",
+   "last_date": "2026-10-05",
    "frequency": "daily"
   },
   {
    "id": "US_5Y5Y",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-02",
+   "last_date": "2026-10-05",
    "frequency": "daily"
   },
   {
    "id": "UK_5Y",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-09-30",
+   "last_date": "2026-10-01",
    "frequency": "daily"
   },
   {
    "id": "UK_10Y",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-09-30",
+   "last_date": "2026-10-01",
    "frequency": "daily"
   },
   {
    "id": "UK_20Y",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-09-30",
+   "last_date": "2026-10-01",
    "frequency": "daily"
   },
   {
    "id": "UK_10Y_REAL",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-09-30",
+   "last_date": "2026-10-01",
    "frequency": "daily"
   },
   {
    "id": "UK_10Y_BE",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-09-30",
+   "last_date": "2026-10-01",
    "frequency": "daily"
   },
   {
    "id": "SONIA",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-09-30",
+   "last_date": "2026-10-01",
    "frequency": "daily"
   },
   {
    "id": "EUR_2Y",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-01",
+   "last_date": "2026-10-02",
    "frequency": "daily"
   },
   {
    "id": "EUR_10Y",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-01",
+   "last_date": "2026-10-02",
    "frequency": "daily"
   },
   {
    "id": "ESTR",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-01",
+   "last_date": "2026-10-05",
    "frequency": "daily"
   },
   {
    "id": "NIFTY",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-01",
+   "last_date": "2026-10-06",
    "frequency": "daily"
   },
   {
    "id": "SENSEX",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-01",
+   "last_date": "2026-10-06",
    "frequency": "daily"
   },
   {
    "id": "BANKNIFTY",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-01",
+   "last_date": "2026-10-06",
    "frequency": "daily"
   },
   {
    "id": "INDIAVIX",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-01",
+   "last_date": "2026-10-06",
    "frequency": "daily"
   },
   {
    "id": "USDINR",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-05",
+   "last_date": "2026-10-06",
    "frequency": "daily"
   },
   {
@@ -220,56 +220,56 @@
    "id": "US_IG_OAS",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-01",
+   "last_date": "2026-10-02",
    "frequency": "daily"
   },
   {
    "id": "US_HY_OAS",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-01",
+   "last_date": "2026-10-02",
    "frequency": "daily"
   },
   {
    "id": "SPX",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-02",
+   "last_date": "2026-10-05",
    "frequency": "daily"
   },
   {
    "id": "NDX",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-02",
+   "last_date": "2026-10-05",
    "frequency": "daily"
   },
   {
    "id": "SX5E",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-02",
+   "last_date": "2026-10-05",
    "frequency": "daily"
   },
   {
    "id": "FTSE",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-02",
+   "last_date": "2026-10-05",
    "frequency": "daily"
   },
   {
    "id": "NIKKEI",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-05",
+   "last_date": "2026-10-06",
    "frequency": "daily"
   },
   {
    "id": "HSI",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-05",
+   "last_date": "2026-10-06",
    "frequency": "daily"
   },
   {
@@ -283,112 +283,112 @@
    "id": "KOSPI",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-02",
+   "last_date": "2026-10-06",
    "frequency": "daily"
   },
   {
    "id": "VIX",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-02",
+   "last_date": "2026-10-05",
    "frequency": "daily"
   },
   {
    "id": "MOVE",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-02",
+   "last_date": "2026-10-05",
    "frequency": "daily"
   },
   {
    "id": "DXY",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-04",
+   "last_date": "2026-10-06",
    "frequency": "daily"
   },
   {
    "id": "EURUSD",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-05",
+   "last_date": "2026-10-06",
    "frequency": "daily"
   },
   {
    "id": "GBPUSD",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-05",
+   "last_date": "2026-10-06",
    "frequency": "daily"
   },
   {
    "id": "USDJPY",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-05",
+   "last_date": "2026-10-06",
    "frequency": "daily"
   },
   {
    "id": "USDCNH",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-05",
-   "frequency": "unknown"
+   "last_date": "2026-10-06",
+   "frequency": "daily"
   },
   {
    "id": "BRENT",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-04",
+   "last_date": "2026-10-06",
    "frequency": "daily"
   },
   {
    "id": "GOLD",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-04",
+   "last_date": "2026-10-06",
    "frequency": "daily"
   },
   {
    "id": "COPPER",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-04",
+   "last_date": "2026-10-06",
    "frequency": "daily"
   },
   {
    "id": "US_2S10S",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-01",
+   "last_date": "2026-10-02",
    "frequency": "daily"
   },
   {
    "id": "US_5S30S",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-01",
+   "last_date": "2026-10-02",
    "frequency": "daily"
   },
   {
    "id": "UK_US_10Y",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-09-30",
+   "last_date": "2026-10-01",
    "frequency": "daily"
   },
   {
    "id": "UK_5S20S",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-09-30",
+   "last_date": "2026-10-01",
    "frequency": "daily"
   },
   {
    "id": "EUR_2S10S",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-01",
+   "last_date": "2026-10-02",
    "frequency": "daily"
   }
  ]
