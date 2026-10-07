@@ -5,20 +5,20 @@ A daily, public-data read of rates, credit, equities and FX, a central-bank deco
 ## Today's brief
 
 <!-- BRIEF:START -->
-**Wed 07 Oct 2026 · MOVE (rates vol) lost 8.40 to 105.20, about 1.9x a normal day's move**
+**Wed 07 Oct 2026 · UK 10y real yield rose 8 bp to 2.02%, about 2.2x a normal day's move**
 
+- MOVE (rates vol) lost 8.40 to 105.20, about 1.9x a normal day's move.
 - Euro AAA 2s10s curve rose 3 bp to 50 bp, about 1.6x a normal day's move.
+- Dollar index gained 0.44% to 102.28.
 - US 3m T-bill rose 3 bp to 4.22%.
-- Euro AAA 10y rose 4 bp to 3.50%.
-- US 5s30s curve rose 3 bp to 60 bp.
-- US IG credit spread fell 1 bp to 84 bp.
+- UK 20y gilt (zero coupon) rose 7 bp to 5.99%.
 
 **India**
 
-- Nifty 50 lost 0.43% to 22,679.
-- Sensex lost 0.19% to 72,928.
-- Nifty Bank gained 0.29% to 55,286.
-- India VIX gained 0.09 to 13.70.
+- Nifty 50 lost 0.94% to 22,563.
+- Sensex lost 0.67% to 72,576.
+- Nifty Bank lost 0.42% to 54,898.
+- India VIX gained 0.46 to 14.07.
 
 [Full brief, charts and table →](https://oblivion783.github.io/macro-quant-lab/) · [Archive](https://oblivion783.github.io/macro-quant-lab/brief/)
 <!-- BRIEF:END -->

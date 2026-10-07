@@ -115,42 +115,42 @@
    "id": "UK_5Y",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-02",
+   "last_date": "2026-10-05",
    "frequency": "daily"
   },
   {
    "id": "UK_10Y",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-02",
+   "last_date": "2026-10-05",
    "frequency": "daily"
   },
   {
    "id": "UK_20Y",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-02",
+   "last_date": "2026-10-05",
    "frequency": "daily"
   },
   {
    "id": "UK_10Y_REAL",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-02",
+   "last_date": "2026-10-05",
    "frequency": "daily"
   },
   {
    "id": "UK_10Y_BE",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-02",
+   "last_date": "2026-10-05",
    "frequency": "daily"
   },
   {
    "id": "SONIA",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-02",
+   "last_date": "2026-10-05",
    "frequency": "daily"
   },
   {
@@ -171,7 +171,7 @@
    "id": "ESTR",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-05",
+   "last_date": "2026-10-06",
    "frequency": "daily"
   },
   {
@@ -248,14 +248,14 @@
    "id": "SX5E",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-06",
+   "last_date": "2026-10-07",
    "frequency": "daily"
   },
   {
    "id": "FTSE",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-06",
+   "last_date": "2026-10-07",
    "frequency": "daily"
   },
   {
@@ -292,7 +292,7 @@
    "id": "VIX",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-06",
+   "last_date": "2026-10-07",
    "frequency": "daily"
   },
   {
@@ -376,14 +376,14 @@
    "id": "UK_US_10Y",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-02",
+   "last_date": "2026-10-05",
    "frequency": "daily"
   },
   {
    "id": "UK_5S20S",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-02",
+   "last_date": "2026-10-05",
    "frequency": "daily"
   },
   {
