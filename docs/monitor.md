@@ -1,6 +1,6 @@
 # Monitor
 
-Charts updated 06 Oct 2026. All data free and public; see the [watchlist](https://github.com/Oblivion783/macro-quant-lab/blob/main/config/series.yaml).
+Charts updated 07 Oct 2026. All data free and public; see the [watchlist](https://github.com/Oblivion783/macro-quant-lab/blob/main/config/series.yaml).
 
 ## US Treasury curve
 
