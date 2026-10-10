@@ -1,4 +1,4 @@
-"""Central Bank Decoder (Project 2): redline a statement against the previous one and score its tone.
+﻿"""Central Bank Decoder (Project 2): redline a statement against the previous one and score its tone.
 
 Usage
   python -m mql.decoder --check-feeds                       # daily job: new Fed statements
@@ -35,7 +35,7 @@ def clean_html(html: str | bytes) -> str:
     from bs4 import BeautifulSoup
 
     soup = BeautifulSoup(html, "lxml")
-    for t in soup(["script", "style", "nav", "header", "footer", "aside", "form"]):
+    for t in soup(["script", "style", "nav", "header", "footer", "aside"]):
         t.decompose()
     article = soup.find(id="article") or soup.find("article") or soup.find("main")
     root = article or soup
@@ -137,11 +137,11 @@ def render(bank_name: str, bank: str, day: str, url: str, prev_day: str | None, 
            ops: list[dict], t_new: dict, t_old: dict | None) -> str:
     changed = [o for o in ops if o["op"] != "same"]
     delta = None if t_old is None else round(t_new["score"] - t_old["score"], 3)
-    lines = [f"# {bank_name} · {day}", "",
-             f"Source: [{url}]({url})" + (f" · compared with [{prev_day}]({prev_url})" if prev_day else ""), ""]
+    lines = [f"# {bank_name} Â· {day}", "",
+             f"Source: [{url}]({url})" + (f" Â· compared with [{prev_day}]({prev_url})" if prev_day else ""), ""]
     lines += ["| | This statement | Previous | Change |", "|---|---:|---:|---:|"]
-    lines.append(f"| Tone score (−1 dovish … +1 hawkish) | {t_new['score']:+.2f} | "
-                 f"{'–' if t_old is None else format(t_old['score'], '+.2f')} | {'–' if delta is None else format(delta, '+.2f')} |")
+    lines.append(f"| Tone score (âˆ’1 dovish â€¦ +1 hawkish) | {t_new['score']:+.2f} | "
+                 f"{'â€“' if t_old is None else format(t_old['score'], '+.2f')} | {'â€“' if delta is None else format(delta, '+.2f')} |")
     lines.append(f"| Sentences changed | {len(changed)} | | |")
     lines += ["", f"**Read:** {'first statement on file' if delta is None else label_from_delta(delta)} versus the previous statement "
               "(lexicon score; check it against your own reading).", ""]
@@ -154,8 +154,8 @@ def render(bank_name: str, bank: str, day: str, url: str, prev_day: str | None, 
                 lines.append(f"- **Added:** {o['text']}")
             else:
                 lines.append(f"- ~~Removed: {o['text']}~~")
-    hits = ", ".join(f"{k} ×{v}" for k, v in {**t_new["hits"]["hawkish"]}.items()) or "none"
-    dhits = ", ".join(f"{k} ×{v}" for k, v in {**t_new["hits"]["dovish"]}.items()) or "none"
+    hits = ", ".join(f"{k} Ã—{v}" for k, v in {**t_new["hits"]["hawkish"]}.items()) or "none"
+    dhits = ", ".join(f"{k} Ã—{v}" for k, v in {**t_new["hits"]["dovish"]}.items()) or "none"
     lines += ["", "## Words behind the score", "", f"- Hawkish: {hits}", f"- Dovish: {dhits}", "",
               "## Market reaction", "", "_Fill in after the release: 2-year yield, curve and currency moves "
               "(from the monitor), and what was priced the day before._", ""]
