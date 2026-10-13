@@ -5,20 +5,20 @@ A daily, public-data read of rates, credit, equities and FX, a central-bank deco
 ## Today's brief
 
 <!-- BRIEF:START -->
-**Mon 12 Oct 2026 · Euro AAA 2s10s curve fell 6 bp to 49 bp, about 2.6x a normal day's move**
+**Tue 13 Oct 2026 · KOSPI lost 6.30% to 5,982, about 1.8x a normal day's move**
 
-- US 30y Treasury fell 7 bp to 5.60%, about 1.9x a normal day's move.
-- US 2s10s curve fell 4 bp to 47 bp.
-- FTSE 100 gained 1.06% to 10,552.
-- US 10y Treasury fell 6 bp to 5.22%.
-- US 10y real yield (TIPS) fell 5 bp to 2.87%.
+- Nikkei 225 lost 2.53% to 67,288.
+- FTSE 100 gained 0.99% to 10,656.
+- Shanghai Composite lost 1.04% to 3,758.
+- US 10y breakeven fell 2 bp to 2.33%.
+- Euro AAA 2s10s curve fell 2 bp to 46 bp.
 
 **India**
 
-- Nifty 50 lost 0.60% to 22,386.
-- Sensex lost 0.76% to 71,918.
-- Nifty Bank lost 0.88% to 54,768.
-- India VIX gained 1.06 to 15.44.
+- Nifty 50 lost 0.70% to 22,363.
+- Sensex lost 0.76% to 71,925.
+- Nifty Bank lost 0.61% to 54,918.
+- India VIX gained 0.87 to 15.25.
 
 [Full brief, charts and table →](https://oblivion783.github.io/macro-quant-lab/) · [Archive](https://oblivion783.github.io/macro-quant-lab/brief/)
 <!-- BRIEF:END -->

@@ -2,6 +2,7 @@
 
 Every daily brief, newest first.
 
+- [2026-10-13](2026-10-13.md) · KOSPI lost 6.30% to 5,982, about 1.8x a normal day's move
 - [2026-10-12](2026-10-12.md) · Euro AAA 2s10s curve fell 6 bp to 49 bp, about 2.6x a normal day's move
 - [2026-10-09](2026-10-09.md) · Euro AAA 2s10s curve rose 8 bp to 54 bp, about 3.6x a normal day's move
 - [2026-10-08](2026-10-08.md) · UK 10y real yield rose 8 bp to 2.02%, about 2.2x a normal day's move
