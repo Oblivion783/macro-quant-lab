@@ -171,35 +171,35 @@
    "id": "ESTR",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-09",
+   "last_date": "2026-10-12",
    "frequency": "daily"
   },
   {
    "id": "NIFTY",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-12",
+   "last_date": "2026-10-13",
    "frequency": "daily"
   },
   {
    "id": "SENSEX",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-12",
+   "last_date": "2026-10-13",
    "frequency": "daily"
   },
   {
    "id": "BANKNIFTY",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-12",
+   "last_date": "2026-10-13",
    "frequency": "daily"
   },
   {
    "id": "INDIAVIX",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-12",
+   "last_date": "2026-10-13",
    "frequency": "daily"
   },
   {
@@ -304,7 +304,7 @@
    "id": "DXY",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-12",
+   "last_date": "2026-10-13",
    "frequency": "daily"
   },
   {
@@ -339,21 +339,21 @@
    "id": "BRENT",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-12",
+   "last_date": "2026-10-13",
    "frequency": "daily"
   },
   {
    "id": "GOLD",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-12",
+   "last_date": "2026-10-13",
    "frequency": "daily"
   },
   {
    "id": "COPPER",
    "status": "ok",
    "issues": [],
-   "last_date": "2026-10-12",
+   "last_date": "2026-10-13",
    "frequency": "daily"
   },
   {

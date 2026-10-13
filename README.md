@@ -5,20 +5,20 @@ A daily, public-data read of rates, credit, equities and FX, a central-bank deco
 ## Today's brief
 
 <!-- BRIEF:START -->
-**Tue 13 Oct 2026 · KOSPI lost 6.30% to 5,982, about 1.8x a normal day's move**
+**Tue 13 Oct 2026 · KOSPI lost 5.42% to 6,038, about 1.6x a normal day's move**
 
-- Nikkei 225 lost 2.53% to 67,288.
 - FTSE 100 gained 0.99% to 10,656.
-- Shanghai Composite lost 1.04% to 3,758.
 - US 10y breakeven fell 2 bp to 2.33%.
 - Euro AAA 2s10s curve fell 2 bp to 46 bp.
+- Nikkei 225 lost 1.82% to 67,778.
+- Nasdaq 100 lost 0.71% to 30,665.
 
 **India**
 
-- Nifty 50 lost 0.70% to 22,363.
-- Sensex lost 0.76% to 71,925.
-- Nifty Bank lost 0.61% to 54,918.
-- India VIX gained 0.87 to 15.25.
+- Nifty 50 gained 0.74% to 22,528.
+- Sensex gained 0.69% to 72,418.
+- Nifty Bank gained 0.37% to 55,122.
+- India VIX lost 0.96 to 14.29.
 
 [Full brief, charts and table →](https://oblivion783.github.io/macro-quant-lab/) · [Archive](https://oblivion783.github.io/macro-quant-lab/brief/)
 <!-- BRIEF:END -->
