@@ -2,6 +2,7 @@
 
 Every daily brief, newest first.
 
+- [2026-10-14](2026-10-14.md) · Euro AAA 2s10s curve fell 3 bp to 43 bp
 - [2026-10-13](2026-10-13.md) · KOSPI lost 5.42% to 6,038, about 1.6x a normal day's move
 - [2026-10-12](2026-10-12.md) · Euro AAA 2s10s curve fell 6 bp to 49 bp, about 2.6x a normal day's move
 - [2026-10-09](2026-10-09.md) · Euro AAA 2s10s curve rose 8 bp to 54 bp, about 3.6x a normal day's move
