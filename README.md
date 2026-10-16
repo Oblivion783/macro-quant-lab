@@ -5,20 +5,20 @@ A daily, public-data read of rates, credit, equities and FX, a central-bank deco
 ## Today's brief
 
 <!-- BRIEF:START -->
-**Thu 15 Oct 2026 · Nikkei 225 lost 4.64% to 64,601, about 2.5x a normal day's move**
+**Fri 16 Oct 2026 · US 2s10s curve fell 5 bp to 37 bp, about 1.8x a normal day's move**
 
-- KOSPI lost 7.68% to 5,547, about 2.2x a normal day's move.
-- Shanghai Composite lost 1.98% to 3,693, about 2.2x a normal day's move.
-- Nasdaq 100 lost 2.02% to 29,951, about 1.6x a normal day's move.
-- Dollar index lost 0.50% to 102.04, about 1.6x a normal day's move.
-- S&P 500 lost 1.11% to 7,719.
+- US high-yield spread rose 9 bp to 325 bp, about 1.7x a normal day's move.
+- US 10y breakeven fell 3 bp to 2.32%, about 1.6x a normal day's move.
+- FTSE 100 gained 1.08% to 10,840.
+- GBP/USD gained 0.56% to 1.3304.
+- US 5s30s curve fell 4 bp to 52 bp.
 
 **India**
 
-- Nifty 50 gained 1.13% to 22,879.
-- Sensex gained 1.06% to 73,555.
-- Nifty Bank gained 0.57% to 55,630.
-- India VIX gained 0.06 to 14.69.
+- Nifty 50 gained 0.21% to 23,045.
+- Sensex lost 0.26% to 74,124.
+- Nifty Bank lost 0.19% to 55,704.
+- India VIX gained 0.11 to 14.14.
 
 [Full brief, charts and table →](https://oblivion783.github.io/macro-quant-lab/) · [Archive](https://oblivion783.github.io/macro-quant-lab/brief/)
 <!-- BRIEF:END -->
