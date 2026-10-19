@@ -2,6 +2,7 @@
 
 Every daily brief, newest first.
 
+- [2026-10-19](2026-10-19.md) · Euro AAA 10y fell 12 bp to 3.39%, about 3.6x a normal day's move
 - [2026-10-16](2026-10-16.md) · US 2s10s curve fell 5 bp to 37 bp, about 1.8x a normal day's move
 - [2026-10-15](2026-10-15.md) · Nikkei 225 lost 4.64% to 64,601, about 2.5x a normal day's move
 - [2026-10-14](2026-10-14.md) · Euro AAA 2s10s curve fell 3 bp to 43 bp

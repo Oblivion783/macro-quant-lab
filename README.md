@@ -5,20 +5,20 @@ A daily, public-data read of rates, credit, equities and FX, a central-bank deco
 ## Today's brief
 
 <!-- BRIEF:START -->
-**Fri 16 Oct 2026 · US 2s10s curve fell 5 bp to 37 bp, about 1.8x a normal day's move**
+**Mon 19 Oct 2026 · Euro AAA 10y fell 12 bp to 3.39%, about 3.6x a normal day's move**
 
-- US high-yield spread rose 9 bp to 325 bp, about 1.7x a normal day's move.
-- US 10y breakeven fell 3 bp to 2.32%, about 1.6x a normal day's move.
-- FTSE 100 gained 1.08% to 10,840.
-- GBP/USD gained 0.56% to 1.3304.
-- US 5s30s curve fell 4 bp to 52 bp.
+- US 30y Treasury fell 9 bp to 5.43%, about 2.4x a normal day's move.
+- Euro AAA 2y fell 10 bp to 2.99%, about 2.4x a normal day's move.
+- VIX gained 3.53 to 19.99, about 2.4x a normal day's move.
+- US 10y Treasury fell 9 bp to 5.10%, about 2.1x a normal day's move.
+- Nasdaq 100 lost 2.50% to 29,188, about 2.0x a normal day's move.
 
 **India**
 
-- Nifty 50 gained 0.21% to 23,045.
-- Sensex lost 0.26% to 74,124.
-- Nifty Bank lost 0.19% to 55,704.
-- India VIX gained 0.11 to 14.14.
+- Nifty 50 lost 0.30% to 23,078.
+- Sensex lost 0.29% to 74,512.
+- Nifty Bank lost 0.61% to 55,501.
+- India VIX gained 0.48 to 14.54.
 
 [Full brief, charts and table →](https://oblivion783.github.io/macro-quant-lab/) · [Archive](https://oblivion783.github.io/macro-quant-lab/brief/)
 <!-- BRIEF:END -->
