@@ -5,20 +5,20 @@ A daily, public-data read of rates, credit, equities and FX, a central-bank deco
 ## Today's brief
 
 <!-- BRIEF:START -->
-**Tue 20 Oct 2026 · Euro AAA 10y rose 5 bp to 3.44%, about 1.6x a normal day's move**
+**Wed 21 Oct 2026 · US IG credit spread rose 2 bp to 87 bp, about 1.9x a normal day's move**
 
-- US high-yield spread rose 8 bp to 331 bp, about 1.5x a normal day's move.
-- FTSE 100 lost 1.08% to 10,765.
-- KOSPI lost 4.41% to 5,514.
-- US 10y real yield (TIPS) fell 4 bp to 2.74%.
-- VIX lost 1.55 to 18.44.
+- US 10y real yield (TIPS) rose 6 bp to 2.80%, about 1.7x a normal day's move.
+- US 10y Treasury rose 6 bp to 5.15%.
+- US 30y Treasury rose 5 bp to 5.48%.
+- GBP/USD gained 0.50% to 1.3375.
+- US 2s10s curve rose 3 bp to 38 bp.
 
 **India**
 
-- Nifty 50 lost 1.11% to 22,889.
-- Sensex lost 1.17% to 73,853.
-- Nifty Bank lost 0.64% to 55,488.
-- India VIX gained 0.71 to 14.77.
+- Nifty 50 gained 0.25% to 22,946.
+- Sensex gained 0.72% to 74,383.
+- Nifty Bank lost 0.17% to 55,395.
+- India VIX gained 0.37 to 15.14.
 
 [Full brief, charts and table →](https://oblivion783.github.io/macro-quant-lab/) · [Archive](https://oblivion783.github.io/macro-quant-lab/brief/)
 <!-- BRIEF:END -->

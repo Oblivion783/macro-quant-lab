@@ -2,6 +2,7 @@
 
 Every daily brief, newest first.
 
+- [2026-10-21](2026-10-21.md) · US IG credit spread rose 2 bp to 87 bp, about 1.9x a normal day's move
 - [2026-10-20](2026-10-20.md) · Euro AAA 10y rose 5 bp to 3.44%, about 1.6x a normal day's move
 - [2026-10-19](2026-10-19.md) · Euro AAA 10y fell 12 bp to 3.39%, about 3.6x a normal day's move
 - [2026-10-16](2026-10-16.md) · US 2s10s curve fell 5 bp to 37 bp, about 1.8x a normal day's move
