@@ -5,20 +5,20 @@ A daily, public-data read of rates, credit, equities and FX, a central-bank deco
 ## Today's brief
 
 <!-- BRIEF:START -->
-**Wed 21 Oct 2026 · US IG credit spread rose 2 bp to 87 bp, about 1.9x a normal day's move**
+**Thu 22 Oct 2026 · Hang Seng lost 2.88% to 22,972, about 2.5x a normal day's move**
 
-- US 10y real yield (TIPS) rose 6 bp to 2.80%, about 1.7x a normal day's move.
-- US 10y Treasury rose 6 bp to 5.15%.
-- US 30y Treasury rose 5 bp to 5.48%.
-- GBP/USD gained 0.50% to 1.3375.
-- US 2s10s curve rose 3 bp to 38 bp.
+- US 5s30s curve fell 6 bp to 48 bp, about 2.1x a normal day's move.
+- UK 10y real yield rose 8 bp to 2.05%, about 2.1x a normal day's move.
+- US 2s10s curve fell 5 bp to 33 bp, about 1.8x a normal day's move.
+- US 30y Treasury fell 6 bp to 5.42%, about 1.6x a normal day's move.
+- UK 10y gilt (zero coupon) rose 8 bp to 5.41%.
 
 **India**
 
-- Nifty 50 gained 0.25% to 22,946.
-- Sensex gained 0.72% to 74,383.
-- Nifty Bank lost 0.17% to 55,395.
-- India VIX gained 0.37 to 15.14.
+- Nifty 50 lost 0.61% to 22,673.
+- Sensex lost 0.61% to 73,257.
+- Nifty Bank lost 0.23% to 54,851.
+- India VIX gained 0.35 to 16.03.
 
 [Full brief, charts and table →](https://oblivion783.github.io/macro-quant-lab/) · [Archive](https://oblivion783.github.io/macro-quant-lab/brief/)
 <!-- BRIEF:END -->
