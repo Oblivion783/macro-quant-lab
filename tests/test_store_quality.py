@@ -95,6 +95,6 @@ class TestSplitSql(unittest.TestCase):
     def test_practice_file(self):
         text = (Path(__file__).resolve().parents[1] / "notebooks" / "sql_practice.sql").read_text(encoding="utf-8")
         parts = store.split_sql(text)
-        self.assertEqual([t.split(".")[0] for t, _ in parts], ["1", "2", "3", "4", "5"])
+        self.assertEqual([t.split(".")[0] for t, _ in parts], [str(n) for n in range(1, 11)])
         for _, q in parts:
-            self.assertTrue(q.lstrip().upper().startswith("SELECT"), q)
+            self.assertTrue(q.lstrip().upper().startswith(("SELECT", "WITH")), q)
