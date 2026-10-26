@@ -5,20 +5,20 @@ A daily, public-data read of rates, credit, equities and FX, a central-bank deco
 ## Today's brief
 
 <!-- BRIEF:START -->
-**Fri 23 Oct 2026 · US 5y5y forward inflation fell 15 bp to 2.19%, about 7.0x a normal day's move**
+**Mon 26 Oct 2026 · US 10y Treasury fell 17 bp to 4.96%, about 4.0x a normal day's move**
 
-- US 10y breakeven fell 5 bp to 2.32%, about 2.6x a normal day's move.
-- MOVE (rates vol) gained 10.90 to 106.84, about 2.5x a normal day's move.
-- Nasdaq 100 lost 2.90% to 28,959, about 2.3x a normal day's move.
-- Euro Stoxx 50 lost 1.94% to 6,087, about 2.0x a normal day's move.
-- UK 5s20s curve fell 5 bp to 90 bp, about 1.9x a normal day's move.
+- US 5y Treasury fell 17 bp to 4.78%, about 3.6x a normal day's move.
+- US 30y Treasury fell 13 bp to 5.29%, about 3.5x a normal day's move.
+- US 2y Treasury fell 16 bp to 4.65%, about 3.4x a normal day's move.
+- US 10y real yield (TIPS) fell 12 bp to 2.64%, about 3.4x a normal day's move.
+- US high-yield spread rose 13 bp to 340 bp, about 2.5x a normal day's move.
 
 **India**
 
-- Nifty 50 lost 0.87% to 22,490.
-- Sensex lost 0.24% to 73,071.
-- Nifty Bank lost 1.26% to 54,233.
-- India VIX gained 1.09 to 16.85.
+- Nifty 50 gained 0.34% to 22,677.
+- Sensex gained 0.24% to 73,298.
+- Nifty Bank lost 0.03% to 54,270.
+- India VIX gained 0.63 to 17.49.
 
 [Full brief, charts and table →](https://oblivion783.github.io/macro-quant-lab/) · [Archive](https://oblivion783.github.io/macro-quant-lab/brief/)
 <!-- BRIEF:END -->
