@@ -5,20 +5,20 @@ A daily, public-data read of rates, credit, equities and FX, a central-bank deco
 ## Today's brief
 
 <!-- BRIEF:START -->
-**Mon 26 Oct 2026 · US 10y Treasury fell 17 bp to 4.96%, about 4.0x a normal day's move**
+**Tue 27 Oct 2026 · US IG credit spread rose 2 bp to 91 bp, about 1.9x a normal day's move**
 
-- US 5y Treasury fell 17 bp to 4.78%, about 3.6x a normal day's move.
-- US 30y Treasury fell 13 bp to 5.29%, about 3.5x a normal day's move.
-- US 2y Treasury fell 16 bp to 4.65%, about 3.4x a normal day's move.
-- US 10y real yield (TIPS) fell 12 bp to 2.64%, about 3.4x a normal day's move.
-- US high-yield spread rose 13 bp to 340 bp, about 2.5x a normal day's move.
+- Brent crude lost 5.28% to 109.70, about 1.5x a normal day's move.
+- EUR/USD lost 0.41% to 1.1172.
+- US 30y Treasury rose 4 bp to 5.33%.
+- USD/JPY gained 0.48% to 157.58.
+- FTSE 100 gained 0.72% to 10,767.
 
 **India**
 
-- Nifty 50 gained 0.34% to 22,677.
-- Sensex gained 0.24% to 73,298.
-- Nifty Bank lost 0.03% to 54,270.
-- India VIX gained 0.63 to 17.49.
+- Nifty 50 lost 0.04% to 22,744.
+- Sensex lost 0.15% to 73,500.
+- Nifty Bank gained 0.23% to 54,490.
+- India VIX lost 0.16 to 17.00.
 
 [Full brief, charts and table →](https://oblivion783.github.io/macro-quant-lab/) · [Archive](https://oblivion783.github.io/macro-quant-lab/brief/)
 <!-- BRIEF:END -->
