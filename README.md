@@ -5,20 +5,20 @@ A daily, public-data read of rates, credit, equities and FX, a central-bank deco
 ## Today's brief
 
 <!-- BRIEF:START -->
-**Wed 28 Oct 2026 · KOSPI gained 6.83% to 6,024, about 1.9x a normal day's move**
+**Thu 29 Oct 2026 · US high-yield spread fell 12 bp to 318 bp, about 2.3x a normal day's move**
 
-- Euro AAA 2s10s curve fell 4 bp to 35 bp, about 1.8x a normal day's move.
-- US 5y5y forward inflation rose 4 bp to 2.25%, about 1.7x a normal day's move.
-- US high-yield spread fell 8 bp to 330 bp, about 1.5x a normal day's move.
-- US 5s30s curve fell 4 bp to 47 bp.
-- EUR/USD lost 0.45% to 1.1123.
+- US IG credit spread fell 2 bp to 88 bp, about 1.9x a normal day's move.
+- US 10y breakeven rose 3 bp to 2.38%, about 1.6x a normal day's move.
+- Brent crude lost 4.73% to 109.87.
+- US 2s10s curve fell 3 bp to 29 bp.
+- US 5y5y forward inflation rose 2 bp to 2.27%.
 
 **India**
 
-- Nifty 50 lost 0.69% to 22,594.
-- Sensex lost 1.05% to 72,826.
-- Nifty Bank gained 0.09% to 54,025.
-- India VIX gained 0.23 to 16.63.
+- Nifty 50 gained 0.68% to 22,854.
+- Sensex gained 0.66% to 73,732.
+- Nifty Bank gained 0.54% to 54,561.
+- India VIX lost 0.58 to 15.67.
 
 [Full brief, charts and table →](https://oblivion783.github.io/macro-quant-lab/) · [Archive](https://oblivion783.github.io/macro-quant-lab/brief/)
 <!-- BRIEF:END -->
