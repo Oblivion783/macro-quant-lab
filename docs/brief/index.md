@@ -2,6 +2,7 @@
 
 Every daily brief, newest first.
 
+- [2026-10-30](2026-10-30.md) · US 2s10s curve rose 9 bp to 38 bp, about 3.2x a normal day's move
 - [2026-10-29](2026-10-29.md) · US high-yield spread fell 12 bp to 318 bp, about 2.3x a normal day's move
 - [2026-10-28](2026-10-28.md) · KOSPI gained 6.83% to 6,024, about 1.9x a normal day's move
 - [2026-10-27](2026-10-27.md) · US IG credit spread rose 2 bp to 91 bp, about 1.9x a normal day's move

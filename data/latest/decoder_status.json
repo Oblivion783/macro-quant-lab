@@ -1,14 +1,4 @@
 {
- "ran": "2026-10-29T05:49:15+00:00",
- "decoded": [
-  {
-   "bank": "fed",
-   "date": "2026-10-28",
-   "url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a.htm",
-   "tone": 1.0,
-   "previous": "2026-09-16",
-   "delta": 0.0,
-   "changed": 7
-  }
- ]
+ "ran": "2026-10-30T05:50:04+00:00",
+ "decoded": []
 }
