@@ -5,20 +5,20 @@ A daily, public-data read of rates, credit, equities and FX, a central-bank deco
 ## Today's brief
 
 <!-- BRIEF:START -->
-**Fri 30 Oct 2026 · US 2s10s curve rose 9 bp to 38 bp, about 3.2x a normal day's move**
+**Mon 02 Nov 2026 · US IG credit spread rose 3 bp to 89 bp, about 2.8x a normal day's move**
 
-- US IG credit spread fell 2 bp to 86 bp, about 1.8x a normal day's move.
-- US 30y Treasury rose 7 bp to 5.37%, about 1.8x a normal day's move.
-- US 3m T-bill fell 4 bp to 4.18%, about 1.7x a normal day's move.
-- US 5y5y forward inflation fell 4 bp to 2.23%, about 1.7x a normal day's move.
-- Hang Seng gained 1.86% to 23,387, about 1.6x a normal day's move.
+- Nasdaq 100 lost 3.46% to 28,385, about 2.8x a normal day's move.
+- US high-yield spread rose 12 bp to 326 bp, about 2.3x a normal day's move.
+- S&P 500 lost 1.82% to 7,580, about 2.3x a normal day's move.
+- US 10y Treasury fell 7 bp to 4.98%, about 1.6x a normal day's move.
+- MOVE (rates vol) gained 6.66 to 100.20, about 1.5x a normal day's move.
 
 **India**
 
-- Nifty 50 gained 0.35% to 23,017.
-- Sensex gained 0.25% to 74,340.
-- Nifty Bank lost 0.22% to 54,790.
-- India VIX gained 0.34 to 15.46.
+- Nifty 50 gained 1.21% to 23,333.
+- Sensex gained 1.34% to 75,460, about 1.5x a normal day's move.
+- Nifty Bank gained 0.33% to 54,870.
+- India VIX gained 0.29 to 15.60.
 
 [Full brief, charts and table →](https://oblivion783.github.io/macro-quant-lab/) · [Archive](https://oblivion783.github.io/macro-quant-lab/brief/)
 <!-- BRIEF:END -->
