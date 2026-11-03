@@ -5,20 +5,20 @@ A daily, public-data read of rates, credit, equities and FX, a central-bank deco
 ## Today's brief
 
 <!-- BRIEF:START -->
-**Mon 02 Nov 2026 · US IG credit spread rose 3 bp to 89 bp, about 2.8x a normal day's move**
+**Tue 03 Nov 2026 · US IG credit spread rose 5 bp to 94 bp, about 4.6x a normal day's move**
 
-- Nasdaq 100 lost 3.46% to 28,385, about 2.8x a normal day's move.
-- US high-yield spread rose 12 bp to 326 bp, about 2.3x a normal day's move.
-- S&P 500 lost 1.82% to 7,580, about 2.3x a normal day's move.
-- US 10y Treasury fell 7 bp to 4.98%, about 1.6x a normal day's move.
-- MOVE (rates vol) gained 6.66 to 100.20, about 1.5x a normal day's move.
+- US high-yield spread rose 18 bp to 344 bp, about 3.4x a normal day's move.
+- US 10y breakeven fell 5 bp to 2.29%, about 2.5x a normal day's move.
+- US 5s30s curve rose 6 bp to 60 bp, about 2.1x a normal day's move.
+- US 5y Treasury fell 7 bp to 4.71%.
+- Copper lost 2.25% to 6.3960.
 
 **India**
 
-- Nifty 50 gained 1.21% to 23,333.
-- Sensex gained 1.34% to 75,460, about 1.5x a normal day's move.
-- Nifty Bank gained 0.33% to 54,870.
-- India VIX gained 0.29 to 15.60.
+- Nifty 50 gained 0.92% to 23,657.
+- Sensex gained 1.25% to 76,641.
+- Nifty Bank gained 0.84% to 55,465.
+- India VIX gained 0.46 to 15.96.
 
 [Full brief, charts and table →](https://oblivion783.github.io/macro-quant-lab/) · [Archive](https://oblivion783.github.io/macro-quant-lab/brief/)
 <!-- BRIEF:END -->

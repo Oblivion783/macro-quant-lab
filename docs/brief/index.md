@@ -2,6 +2,7 @@
 
 Every daily brief, newest first.
 
+- [2026-11-03](2026-11-03.md) · US IG credit spread rose 5 bp to 94 bp, about 4.6x a normal day's move
 - [2026-11-02](2026-11-02.md) · US IG credit spread rose 3 bp to 89 bp, about 2.8x a normal day's move
 - [2026-10-30](2026-10-30.md) · US 2s10s curve rose 9 bp to 38 bp, about 3.2x a normal day's move
 - [2026-10-29](2026-10-29.md) · US high-yield spread fell 12 bp to 318 bp, about 2.3x a normal day's move
