@@ -2,6 +2,7 @@
 
 Every daily brief, newest first.
 
+- [2026-11-05](2026-11-05.md) · Hang Seng gained 3.53% to 24,764, about 3.0x a normal day's move
 - [2026-11-04](2026-11-04.md) · Shanghai Composite gained 2.11% to 3,684, about 2.3x a normal day's move
 - [2026-11-03](2026-11-03.md) · US IG credit spread rose 5 bp to 94 bp, about 4.6x a normal day's move
 - [2026-11-02](2026-11-02.md) · US IG credit spread rose 3 bp to 89 bp, about 2.8x a normal day's move
