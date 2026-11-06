@@ -5,20 +5,20 @@ A daily, public-data read of rates, credit, equities and FX, a central-bank deco
 ## Today's brief
 
 <!-- BRIEF:START -->
-**Thu 05 Nov 2026 · Hang Seng gained 3.53% to 24,764, about 3.0x a normal day's move**
+**Fri 06 Nov 2026 · VIX gained 11.57 to 28.18, about 7.7x a normal day's move**
 
-- VIX lost 4.22 to 16.61, about 2.9x a normal day's move.
-- FTSE 100 gained 1.79% to 10,829, about 2.4x a normal day's move.
-- UK 10y implied inflation fell 7 bp to 3.25%, about 2.4x a normal day's move.
-- US 10y breakeven fell 4 bp to 2.26%, about 2.0x a normal day's move.
-- Euro Stoxx 50 gained 1.97% to 6,266, about 2.0x a normal day's move.
+- S&P 500 lost 4.36% to 7,354, about 5.4x a normal day's move.
+- Nasdaq 100 lost 6.36% to 26,630, about 5.0x a normal day's move.
+- Nikkei 225 lost 5.96% to 57,435, about 3.2x a normal day's move.
+- US IG credit spread fell 2 bp to 91 bp, about 1.8x a normal day's move.
+- KOSPI lost 6.19% to 5,050, about 1.7x a normal day's move.
 
 **India**
 
-- Nifty 50 gained 1.91% to 24,417, about 2.2x a normal day's move.
-- Sensex gained 1.98% to 78,831, about 2.2x a normal day's move.
-- Nifty Bank gained 2.57% to 57,350, about 2.4x a normal day's move.
-- India VIX lost 0.01 to 15.18.
+- Nifty 50 gained 0.48% to 24,655.
+- Sensex gained 0.61% to 79,790.
+- Nifty Bank gained 0.31% to 57,953.
+- India VIX gained 1.32 to 16.90.
 
 [Full brief, charts and table →](https://oblivion783.github.io/macro-quant-lab/) · [Archive](https://oblivion783.github.io/macro-quant-lab/brief/)
 <!-- BRIEF:END -->
