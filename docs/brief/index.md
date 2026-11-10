@@ -2,6 +2,7 @@
 
 Every daily brief, newest first.
 
+- [2026-11-10](2026-11-10.md) · VIX lost 5.72 to 19.92, about 3.4x a normal day's move
 - [2026-11-09](2026-11-09.md) · US high-yield spread rose 16 bp to 348 bp, about 3.0x a normal day's move
 - [2026-11-06](2026-11-06.md) · VIX gained 11.57 to 28.18, about 7.7x a normal day's move
 - [2026-11-05](2026-11-05.md) · Hang Seng gained 3.53% to 24,764, about 3.0x a normal day's move
