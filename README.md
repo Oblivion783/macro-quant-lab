@@ -5,20 +5,20 @@ A daily, public-data read of rates, credit, equities and FX, a central-bank deco
 ## Today's brief
 
 <!-- BRIEF:START -->
-**Tue 10 Nov 2026 · VIX lost 5.72 to 19.92, about 3.4x a normal day's move**
+**Wed 11 Nov 2026 · US 3m T-bill rose 5 bp to 4.24%, about 2.2x a normal day's move**
 
-- S&P 500 gained 2.35% to 7,550, about 2.8x a normal day's move.
-- Nasdaq 100 gained 3.40% to 27,908, about 2.6x a normal day's move.
-- EUR/USD gained 0.80% to 1.1236, about 2.3x a normal day's move.
-- Euro Stoxx 50 gained 1.94% to 6,290, about 2.0x a normal day's move.
-- GBP/USD gained 0.71% to 1.3455, about 1.8x a normal day's move.
+- GBP/USD lost 0.75% to 1.3341, about 1.9x a normal day's move.
+- US IG credit spread fell 2 bp to 91 bp, about 1.8x a normal day's move.
+- US 5y5y forward inflation fell 4 bp to 2.15%, about 1.7x a normal day's move.
+- EUR/USD lost 0.54% to 1.1162, about 1.6x a normal day's move.
+- US high-yield spread fell 8 bp to 334 bp.
 
 **India**
 
-- Nifty 50 gained 0.06% to 25,045.
-- Sensex gained 0.10% to 81,107.
-- Nifty Bank gained 1.11% to 59,741.
-- India VIX lost 0.05 to 17.42.
+- Nifty 50 gained 1.33% to 25,378.
+- Sensex gained 1.59% to 82,392, about 1.7x a normal day's move.
+- Nifty Bank gained 2.60% to 61,297, about 2.3x a normal day's move.
+- India VIX gained 0.17 to 17.59.
 
 [Full brief, charts and table →](https://oblivion783.github.io/macro-quant-lab/) · [Archive](https://oblivion783.github.io/macro-quant-lab/brief/)
 <!-- BRIEF:END -->
