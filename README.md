@@ -5,20 +5,20 @@ A daily, public-data read of rates, credit, equities and FX, a central-bank deco
 ## Today's brief
 
 <!-- BRIEF:START -->
-**Wed 11 Nov 2026 · US 3m T-bill rose 5 bp to 4.24%, about 2.2x a normal day's move**
+**Thu 12 Nov 2026 · EUR/USD lost 0.85% to 1.1074, about 2.5x a normal day's move**
 
-- GBP/USD lost 0.75% to 1.3341, about 1.9x a normal day's move.
+- US 3m T-bill rose 5 bp to 4.24%, about 2.2x a normal day's move.
+- Euro AAA 2y rose 8 bp to 3.02%, about 1.9x a normal day's move.
 - US IG credit spread fell 2 bp to 91 bp, about 1.8x a normal day's move.
-- US 5y5y forward inflation fell 4 bp to 2.15%, about 1.7x a normal day's move.
-- EUR/USD lost 0.54% to 1.1162, about 1.6x a normal day's move.
-- US high-yield spread fell 8 bp to 334 bp.
+- GBP/USD lost 0.69% to 1.3256, about 1.7x a normal day's move.
+- Euro AAA 10y rose 6 bp to 3.33%, about 1.7x a normal day's move.
 
 **India**
 
-- Nifty 50 gained 1.33% to 25,378.
-- Sensex gained 1.59% to 82,392, about 1.7x a normal day's move.
-- Nifty Bank gained 2.60% to 61,297, about 2.3x a normal day's move.
-- India VIX gained 0.17 to 17.59.
+- Nifty 50 lost 0.16% to 25,215.
+- Sensex lost 0.07% to 81,819.
+- Nifty Bank gained 0.57% to 61,141.
+- India VIX lost 0.65 to 16.91.
 
 [Full brief, charts and table →](https://oblivion783.github.io/macro-quant-lab/) · [Archive](https://oblivion783.github.io/macro-quant-lab/brief/)
 <!-- BRIEF:END -->

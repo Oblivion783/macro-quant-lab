@@ -2,6 +2,7 @@
 
 Every daily brief, newest first.
 
+- [2026-11-12](2026-11-12.md) · EUR/USD lost 0.85% to 1.1074, about 2.5x a normal day's move
 - [2026-11-11](2026-11-11.md) · US 3m T-bill rose 5 bp to 4.24%, about 2.2x a normal day's move
 - [2026-11-10](2026-11-10.md) · VIX lost 5.72 to 19.92, about 3.4x a normal day's move
 - [2026-11-09](2026-11-09.md) · US high-yield spread rose 16 bp to 348 bp, about 3.0x a normal day's move
