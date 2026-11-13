@@ -2,6 +2,7 @@
 
 Every daily brief, newest first.
 
+- [2026-11-13](2026-11-13.md) · US 2y Treasury rose 17 bp to 4.73%, about 3.5x a normal day's move
 - [2026-11-12](2026-11-12.md) · EUR/USD lost 0.85% to 1.1074, about 2.5x a normal day's move
 - [2026-11-11](2026-11-11.md) · US 3m T-bill rose 5 bp to 4.24%, about 2.2x a normal day's move
 - [2026-11-10](2026-11-10.md) · VIX lost 5.72 to 19.92, about 3.4x a normal day's move

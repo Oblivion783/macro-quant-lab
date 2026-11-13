@@ -1,27 +1,27 @@
-# Daily Macro Desk · Thu 12 Nov 2026
+# Daily Macro Desk · Fri 13 Nov 2026
 
-## EUR/USD lost 0.85% to 1.1074, about 2.5x a normal day's move
+## US 2y Treasury rose 17 bp to 4.73%, about 3.5x a normal day's move
 
 ### Global markets
 
-- US 3m T-bill rose 5 bp to 4.24%, about 2.2x a normal day's move.
-- Euro AAA 2y rose 8 bp to 3.02%, about 1.9x a normal day's move.
-- US IG credit spread fell 2 bp to 91 bp, about 1.8x a normal day's move.
-- GBP/USD lost 0.69% to 1.3256, about 1.7x a normal day's move.
-- Euro AAA 10y rose 6 bp to 3.33%, about 1.7x a normal day's move.
-- US 10y Treasury rose 2 bp to 4.88%.
-- UK 10y gilt (zero coupon) fell 2 bp to 5.13%.
-- S&P 500 gained 1.31% to 7,619, about 1.5x a normal day's move.
+- US 10y real yield (TIPS) rose 12 bp to 2.78%, about 3.3x a normal day's move.
+- US 5y Treasury rose 14 bp to 4.81%, about 2.9x a normal day's move.
+- US 3m T-bill rose 6 bp to 4.30%, about 2.6x a normal day's move.
+- US 2s10s curve fell 7 bp to 25 bp, about 2.4x a normal day's move.
+- US 30y Treasury rose 9 bp to 5.35%, about 2.4x a normal day's move.
+- US 10y Treasury rose 10 bp to 4.98%, about 2.3x a normal day's move.
+- UK 10y gilt (zero coupon) rose 6 bp to 5.19%.
+- Euro AAA 10y rose 0.9 bp to 3.34%.
 
-The US 2s10s curve is positively sloped at 32 bp. Credit: spreads wide versus the past year. Equity volatility looks normal. US 10-year breakeven inflation is between 2% and 2.5%.
+The US 2s10s curve is positively sloped at 25 bp. Credit: spreads wide versus the past year. Equity volatility looks normal. US 10-year breakeven inflation is between 2% and 2.5%.
 
 ### India
 
-- Nifty 50 lost 0.16% to 25,215.
-- Sensex lost 0.07% to 81,819.
-- Nifty Bank gained 0.57% to 61,141.
-- India VIX lost 0.65 to 16.91.
-- USD/INR lost 0.04% to 93.89.
+- Nifty 50 lost 0.82% to 25,091.
+- Sensex lost 0.42% to 81,571.
+- Nifty Bank lost 1.08% to 60,851.
+- India VIX lost 0.46 to 16.16.
+- USD/INR gained 0.52% to 94.19.
 - India 10y G-sec (monthly): 7.06% (latest monthly reading, 2026-09).
 
 ![US Treasury curve](assets/charts/ust_curve.png)
@@ -33,65 +33,65 @@ The US 2s10s curve is positively sloped at 32 bp. Credit: spreads wide versus th
 | | Level | 1d | 1w | 1m | z (1y) | As of |
 |---|---:|---:|---:|---:|---:|---|
 | **US rates** | | | | | | |
-| US 3m T-bill | 4.24% | +5 bp | +3 bp | -1 bp | +2.1 | 2026-11-09 |
-| US 2y Treasury | 4.56% | +5 bp | -3 bp | -24 bp | +1.3 | 2026-11-09 |
-| US 5y Treasury | 4.67% | +3 bp | -3 bp | -35 bp | +1.2 | 2026-11-09 |
-| US 10y Treasury | 4.88% | +2 bp | -3 bp | -36 bp | +1.2 | 2026-11-09 |
-| US 30y Treasury | 5.26% | +0 bp | -2 bp | -34 bp | +1.0 | 2026-11-09 |
-| SOFR | 3.88% | -1 bp | -7 bp | +1 bp | +1.4 | 2026-11-09 |
-| US 2s10s curve | 32 bp | -3 bp | +0 bp | -12 bp | -1.4 | 2026-11-09 |
-| US 5s30s curve | 59 bp | -3 bp | +1 bp | +1 bp | -1.4 | 2026-11-09 |
+| US 3m T-bill | 4.30% | +6 bp | +9 bp | +5 bp | +2.4 | 2026-11-10 |
+| US 2y Treasury | 4.73% | +17 bp | +12 bp | -7 bp | +1.7 | 2026-11-10 |
+| US 5y Treasury | 4.81% | +14 bp | +7 bp | -21 bp | +1.6 | 2026-11-10 |
+| US 10y Treasury | 4.98% | +10 bp | +3 bp | -26 bp | +1.5 | 2026-11-10 |
+| US 30y Treasury | 5.35% | +9 bp | +3 bp | -25 bp | +1.4 | 2026-11-10 |
+| SOFR | 3.89% | +1 bp | -8 bp | +2 bp | +1.4 | 2026-11-10 |
+| US 2s10s curve | 25 bp | -7 bp | -9 bp | -19 bp | -1.9 | 2026-11-10 |
+| US 5s30s curve | 54 bp | -5 bp | -4 bp | -4 bp | -1.7 | 2026-11-10 |
 | **UK rates** | | | | | | |
-| UK 5y gilt (zero coupon) | 4.75% | -1 bp | -5 bp | -23 bp | +1.2 | 2026-11-09 |
-| UK 10y gilt (zero coupon) | 5.13% | -2 bp | -6 bp | -32 bp | +0.8 | 2026-11-09 |
-| UK 20y gilt (zero coupon) | 5.63% | -2 bp | -4 bp | -38 bp | +0.3 | 2026-11-09 |
-| SONIA | 3.98% | -0.1 bp | +25 bp | +25 bp | +2.8 | 2026-11-09 |
-| UK minus US 10y | 25 bp | -4 bp | -2 bp | +4 bp | -1.4 | 2026-11-09 |
-| UK 5s20s curve | 87 bp | -0.5 bp | +1 bp | -15 bp | -2.5 | 2026-11-09 |
+| UK 5y gilt (zero coupon) | 4.84% | +9 bp | -1 bp | -14 bp | +1.4 | 2026-11-10 |
+| UK 10y gilt (zero coupon) | 5.19% | +6 bp | -4 bp | -26 bp | +1.0 | 2026-11-10 |
+| UK 20y gilt (zero coupon) | 5.67% | +4 bp | -5 bp | -34 bp | +0.4 | 2026-11-10 |
+| SONIA | 3.98% | -0.1 bp | +25 bp | +25 bp | +2.8 | 2026-11-10 |
+| UK minus US 10y | 21 bp | -4 bp | -7 bp | +0.4 bp | -1.7 | 2026-11-10 |
+| UK 5s20s curve | 83 bp | -4 bp | -4 bp | -19 bp | -2.7 | 2026-11-10 |
 | **Euro rates** | | | | | | |
-| Euro AAA 2y | 3.02% | +8 bp | +3 bp | -3 bp | +1.4 | 2026-11-10 |
-| Euro AAA 10y | 3.33% | +6 bp | -2 bp | -18 bp | +1.1 | 2026-11-10 |
+| Euro AAA 2y | 3.05% | +3 bp | +5 bp | -0.2 bp | +1.4 | 2026-11-11 |
+| Euro AAA 10y | 3.34% | +0.9 bp | -0 bp | -17 bp | +1.1 | 2026-11-11 |
 | €STR | 2.44% | -0.3 bp | -0.3 bp | +0.2 bp | +1.9 | 2026-11-11 |
-| Euro AAA 2s10s curve | 31 bp | -2 bp | -5 bp | -15 bp | -1.6 | 2026-11-10 |
+| Euro AAA 2s10s curve | 29 bp | -2 bp | -5 bp | -17 bp | -1.7 | 2026-11-11 |
 | **Inflation** | | | | | | |
-| US 10y real yield (TIPS) | 2.66% | +3 bp | +4 bp | -25 bp | +1.5 | 2026-11-09 |
-| US 10y breakeven | 2.20% | -2 bp | -10 bp | -13 bp | -1.7 | 2026-11-10 |
-| US 5y5y forward inflation | 2.15% | -4 bp | -6 bp | -17 bp | -1.0 | 2026-11-10 |
-| UK 10y real yield | 1.97% | +2 bp | +4 bp | -7 bp | +1.5 | 2026-11-09 |
-| UK 10y implied inflation | 3.16% | -3 bp | -9 bp | -25 bp | -0.4 | 2026-11-09 |
+| US 10y real yield (TIPS) | 2.78% | +12 bp | +13 bp | -13 bp | +1.9 | 2026-11-10 |
+| US 10y breakeven | 2.24% | +4 bp | +0 bp | -9 bp | -1.1 | 2026-11-12 |
+| US 5y5y forward inflation | 2.17% | +2 bp | -5 bp | -15 bp | -0.8 | 2026-11-12 |
+| UK 10y real yield | 2.05% | +8 bp | +7 bp | +2 bp | +1.9 | 2026-11-10 |
+| UK 10y implied inflation | 3.14% | -2 bp | -11 bp | -27 bp | -0.6 | 2026-11-10 |
 | **Credit** | | | | | | |
-| US IG credit spread | 91 bp | -2 bp | -3 bp | +8 bp | +2.2 | 2026-11-09 |
-| US high-yield spread | 334 bp | -8 bp | -9 bp | +23 bp | +2.1 | 2026-11-09 |
+| US IG credit spread | 90 bp | -1 bp | -1 bp | +7 bp | +1.9 | 2026-11-11 |
+| US high-yield spread | 330 bp | -4 bp | -2 bp | +19 bp | +1.9 | 2026-11-11 |
 | **Equities** | | | | | | |
-| S&P 500 | 7,619 | +1.31% | -0.90% | -2.46% | +1.0 | 2026-11-11 |
-| Nasdaq 100 | 28,374 | +2.28% | -0.22% | -8.12% | +0.4 | 2026-11-11 |
-| Euro Stoxx 50 | 6,393 | +1.04% | +2.04% | +3.56% | +1.3 | 2026-11-11 |
-| FTSE 100 | 10,836 | +0.78% | +0.06% | +2.69% | +1.2 | 2026-11-11 |
-| Nikkei 225 | 60,819 | -0.70% | -0.42% | -11.90% | +0.1 | 2026-11-12 |
-| Hang Seng | 24,009 | -1.26% | -3.18% | -1.08% | -1.3 | 2026-11-12 |
-| Shanghai Composite | 3,653 | -0.76% | -1.01% | -3.81% | -2.2 | 2026-11-12 |
-| KOSPI | 5,343 | -0.61% | -0.76% | -16.31% | -0.6 | 2026-11-12 |
+| S&P 500 | 7,592 | -0.35% | +3.25% | -2.75% | +0.9 | 2026-11-12 |
+| Nasdaq 100 | 28,289 | -0.30% | +6.23% | -7.75% | +0.4 | 2026-11-12 |
+| Euro Stoxx 50 | 6,399 | +0.09% | +2.69% | +3.19% | +1.3 | 2026-11-12 |
+| FTSE 100 | 10,863 | +0.25% | +0.75% | +1.94% | +1.3 | 2026-11-12 |
+| Nikkei 225 | 61,142 | +0.53% | +6.46% | -9.79% | +0.1 | 2026-11-13 |
+| Hang Seng | 23,664 | -1.44% | -3.34% | -2.80% | -1.6 | 2026-11-13 |
+| Shanghai Composite | 3,634 | -0.61% | -0.42% | -4.40% | -2.3 | 2026-11-13 |
+| KOSPI | 5,298 | -0.85% | +4.70% | -12.23% | -0.6 | 2026-11-13 |
 | **Volatility** | | | | | | |
-| VIX | 17.49 | -1.97 | +0.88 | +2.65 | -0.2 | 2026-11-11 |
-| MOVE (rates vol) | 92.43 | +6.45 | -7.54 | -6.04 | +1.2 | 2026-11-10 |
+| VIX | 18.70 | +1.21 | -9.48 | +3.49 | +0.2 | 2026-11-12 |
+| MOVE (rates vol) | 98.43 | +6.00 | +0.51 | -0.04 | +1.6 | 2026-11-12 |
 | **FX** | | | | | | |
-| Dollar index | 103.04 | +0.13% | +1.47% | +0.45% | +2.4 | 2026-11-12 |
-| EUR/USD | 1.1074 | -0.85% | -1.43% | -0.77% | -2.6 | 2026-11-12 |
-| GBP/USD | 1.3256 | -0.69% | -1.64% | +0.35% | -1.1 | 2026-11-12 |
-| USD/JPY | 159.83 | +0.71% | +0.93% | +0.82% | +0.7 | 2026-11-12 |
-| USD/CNH | 6.6677 | -0.09% | +0.02% | -0.39% | -0.7 | 2026-11-12 |
+| Dollar index | 103.18 | +0.01% | +0.86% | +0.98% | +2.4 | 2026-11-13 |
+| EUR/USD | 1.1062 | -0.30% | -1.48% | -1.27% | -2.6 | 2026-11-13 |
+| GBP/USD | 1.3229 | -0.36% | -1.69% | -0.21% | -1.3 | 2026-11-13 |
+| USD/JPY | 159.81 | +0.05% | +1.47% | +0.94% | +0.7 | 2026-11-13 |
+| USD/CNH | 6.6722 | +0.07% | +0.10% | -0.36% | -0.4 | 2026-11-13 |
 | **Commodities** | | | | | | |
-| Brent crude | 92.85 | +0.10% | -5.53% | -12.94% | +0.3 | 2026-11-12 |
-| Gold | 3,970 | -0.76% | -3.49% | -5.26% | -1.4 | 2026-11-12 |
-| Copper | 6.2205 | -0.86% | -0.46% | -7.14% | +0.3 | 2026-11-12 |
+| Brent crude | 96.25 | +0.45% | -2.11% | -8.93% | +0.5 | 2026-11-13 |
+| Gold | 3,898 | +0.34% | -4.33% | -6.68% | -1.6 | 2026-11-13 |
+| Copper | 6.1695 | -0.21% | -0.78% | -7.61% | +0.2 | 2026-11-13 |
 | **India** | | | | | | |
-| Nifty 50 | 25,215 | -0.16% | +2.76% | +12.75% | +0.8 | 2026-11-12 |
-| Sensex | 81,819 | -0.07% | +3.16% | +13.76% | +0.8 | 2026-11-12 |
-| Nifty Bank | 61,141 | +0.57% | +5.83% | +11.33% | +1.7 | 2026-11-12 |
-| India VIX | 16.91 | -0.65 | +1.33 | +1.66 | +0.7 | 2026-11-12 |
-| USD/INR | 93.89 | -0.04% | -0.67% | -1.97% | +0.1 | 2026-11-12 |
+| Nifty 50 | 25,091 | -0.82% | +0.24% | +10.43% | +0.7 | 2026-11-13 |
+| Sensex | 81,571 | -0.42% | +0.67% | +11.69% | +0.8 | 2026-11-13 |
+| Nifty Bank | 60,851 | -1.08% | +2.99% | +9.68% | +1.6 | 2026-11-13 |
+| India VIX | 16.16 | -0.46 | -1.31 | +2.04 | +0.5 | 2026-11-13 |
+| USD/INR | 94.19 | +0.52% | -0.29% | -1.15% | +0.3 | 2026-11-13 |
 | India 10y G-sec (monthly) | 7.06% | +22 bp | +22 bp | +22 bp | – | 2026-09-01 |
 
-<small>Data quality: 55 ok, 0 warnings, 0 failures. Written by: template.</small>
+<small>Data quality: 54 ok, 1 warnings, 0 failures. Check: UST_6M. Written by: template.</small>
 
 *Personal research on public data. Not investment advice. Views are my own and not those of any employer. Numbers can be wrong; check the source before relying on them.*
