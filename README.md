@@ -5,20 +5,20 @@ A daily, public-data read of rates, credit, equities and FX, a central-bank deco
 ## Today's brief
 
 <!-- BRIEF:START -->
-**Fri 13 Nov 2026 · US 2y Treasury rose 17 bp to 4.73%, about 3.5x a normal day's move**
+**Mon 16 Nov 2026 · US 5y Treasury rose 14 bp to 4.95%, about 2.8x a normal day's move**
 
-- US 10y real yield (TIPS) rose 12 bp to 2.78%, about 3.3x a normal day's move.
-- US 5y Treasury rose 14 bp to 4.81%, about 2.9x a normal day's move.
-- US 3m T-bill rose 6 bp to 4.30%, about 2.6x a normal day's move.
-- US 2s10s curve fell 7 bp to 25 bp, about 2.4x a normal day's move.
-- US 30y Treasury rose 9 bp to 5.35%, about 2.4x a normal day's move.
+- US 10y Treasury rose 12 bp to 5.10%, about 2.7x a normal day's move.
+- US 2y Treasury rose 13 bp to 4.86%, about 2.6x a normal day's move.
+- US 10y real yield (TIPS) rose 8 bp to 2.86%, about 2.2x a normal day's move.
+- US 30y Treasury rose 8 bp to 5.43%, about 2.1x a normal day's move.
+- US 5s30s curve fell 6 bp to 48 bp, about 2.0x a normal day's move.
 
 **India**
 
-- Nifty 50 lost 0.82% to 25,091.
-- Sensex lost 0.42% to 81,571.
-- Nifty Bank lost 1.08% to 60,851.
-- India VIX lost 0.46 to 16.16.
+- Nifty 50 gained 0.45% to 25,256.
+- Sensex gained 0.42% to 81,939.
+- Nifty Bank gained 0.73% to 61,482.
+- India VIX gained 0.19 to 15.69.
 
 [Full brief, charts and table →](https://oblivion783.github.io/macro-quant-lab/) · [Archive](https://oblivion783.github.io/macro-quant-lab/brief/)
 <!-- BRIEF:END -->
