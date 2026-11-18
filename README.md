@@ -5,20 +5,20 @@ A daily, public-data read of rates, credit, equities and FX, a central-bank deco
 ## Today's brief
 
 <!-- BRIEF:START -->
-**Tue 17 Nov 2026 · S&P 500 lost 1.92% to 7,417, about 2.2x a normal day's move**
+**Wed 18 Nov 2026 · FTSE 100 lost 1.76% to 10,690, about 2.4x a normal day's move**
 
-- Euro AAA 2s10s curve rose 5 bp to 34 bp, about 2.2x a normal day's move.
-- VIX gained 3.61 to 22.91, about 2.1x a normal day's move.
-- US 10y breakeven fell 4 bp to 2.20%, about 2.0x a normal day's move.
-- Nasdaq 100 lost 2.67% to 27,197, about 2.0x a normal day's move.
-- US 10y real yield (TIPS) rose 5 bp to 2.91%.
+- Euro Stoxx 50 lost 2.15% to 6,212, about 2.2x a normal day's move.
+- US high-yield spread rose 11 bp to 334 bp, about 2.0x a normal day's move.
+- Copper lost 2.84% to 5.8065, about 1.6x a normal day's move.
+- VIX gained 2.55 to 25.46.
+- US 5s30s curve rose 4 bp to 53 bp.
 
 **India**
 
-- Nifty 50 gained 0.34% to 25,377.
-- Sensex gained 0.46% to 82,482.
-- Nifty Bank gained 0.97% to 62,171.
-- India VIX lost 0.26 to 15.42.
+- Nifty 50 lost 0.74% to 25,200.
+- Sensex lost 0.78% to 81,888.
+- Nifty Bank lost 0.34% to 62,064.
+- India VIX gained 0.33 to 15.85.
 
 [Full brief, charts and table →](https://oblivion783.github.io/macro-quant-lab/) · [Archive](https://oblivion783.github.io/macro-quant-lab/brief/)
 <!-- BRIEF:END -->
