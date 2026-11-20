@@ -5,20 +5,20 @@ A daily, public-data read of rates, credit, equities and FX, a central-bank deco
 ## Today's brief
 
 <!-- BRIEF:START -->
-**Thu 19 Nov 2026 · US IG credit spread rose 2 bp to 92 bp, about 1.8x a normal day's move**
+**Fri 20 Nov 2026 · Nikkei 225 lost 5.06% to 56,437, about 2.7x a normal day's move**
 
-- FTSE 100 lost 1.30% to 10,551, about 1.7x a normal day's move.
-- Hang Seng lost 1.97% to 22,835, about 1.7x a normal day's move.
-- US high-yield spread rose 9 bp to 343 bp, about 1.6x a normal day's move.
-- UK 10y real yield rose 5 bp to 2.16%.
-- UK 10y implied inflation fell 4 bp to 3.17%.
+- S&P 500 lost 2.02% to 7,176, about 2.3x a normal day's move.
+- VIX gained 3.88 to 28.44, about 2.3x a normal day's move.
+- US 5y5y forward inflation fell 5 bp to 2.10%, about 2.1x a normal day's move.
+- Gold lost 3.67% to 3,550, about 2.1x a normal day's move.
+- Hang Seng lost 2.14% to 22,353, about 1.8x a normal day's move.
 
 **India**
 
-- Nifty 50 gained 0.54% to 25,364.
-- Sensex gained 0.63% to 82,550.
-- Nifty Bank gained 0.95% to 62,631.
-- India VIX gained 0.64 to 16.21.
+- Nifty 50 gained 0.79% to 25,715.
+- Sensex gained 0.74% to 83,635.
+- Nifty Bank gained 1.94% to 64,283, about 1.7x a normal day's move.
+- India VIX gained 1.24 to 17.35.
 
 [Full brief, charts and table →](https://oblivion783.github.io/macro-quant-lab/) · [Archive](https://oblivion783.github.io/macro-quant-lab/brief/)
 <!-- BRIEF:END -->
