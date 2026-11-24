@@ -5,20 +5,20 @@ A daily, public-data read of rates, credit, equities and FX, a central-bank deco
 ## Today's brief
 
 <!-- BRIEF:START -->
-**Mon 23 Nov 2026 · VIX gained 7.45 to 35.89, about 4.3x a normal day's move**
+**Tue 24 Nov 2026 · S&P 500 gained 4.73% to 7,237, about 5.3x a normal day's move**
 
-- S&P 500 lost 3.70% to 6,910, about 4.2x a normal day's move.
-- Nasdaq 100 lost 5.61% to 25,029, about 4.1x a normal day's move.
-- Euro Stoxx 50 lost 2.81% to 5,942, about 2.8x a normal day's move.
-- Nikkei 225 lost 5.06% to 56,437, about 2.7x a normal day's move.
-- MOVE (rates vol) gained 10.27 to 106.31, about 2.3x a normal day's move.
+- Nasdaq 100 gained 6.86% to 26,746, about 4.9x a normal day's move.
+- US high-yield spread rose 24 bp to 376 bp, about 4.4x a normal day's move.
+- US IG credit spread rose 4 bp to 98 bp, about 3.6x a normal day's move.
+- US 5y Treasury fell 15 bp to 4.71%, about 3.0x a normal day's move.
+- US 10y real yield (TIPS) fell 11 bp to 2.77%, about 3.0x a normal day's move.
 
 **India**
 
-- Nifty 50 lost 1.29% to 25,467.
-- Sensex lost 1.24% to 82,880.
-- Nifty Bank lost 2.31% to 63,139, about 2.0x a normal day's move.
-- India VIX gained 0.98 to 18.30.
+- Nifty 50 lost 1.75% to 25,350, about 1.9x a normal day's move.
+- Sensex lost 1.77% to 82,436, about 1.9x a normal day's move.
+- Nifty Bank lost 3.17% to 62,585, about 2.8x a normal day's move.
+- India VIX gained 0.38 to 17.70.
 
 [Full brief, charts and table →](https://oblivion783.github.io/macro-quant-lab/) · [Archive](https://oblivion783.github.io/macro-quant-lab/brief/)
 <!-- BRIEF:END -->
