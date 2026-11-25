@@ -2,6 +2,7 @@
 
 Every daily brief, newest first.
 
+- [2026-11-25](2026-11-25.md) · US high-yield spread fell 13 bp to 363 bp, about 2.3x a normal day's move
 - [2026-11-24](2026-11-24.md) · S&P 500 gained 4.73% to 7,237, about 5.3x a normal day's move
 - [2026-11-23](2026-11-23.md) · VIX gained 7.45 to 35.89, about 4.3x a normal day's move
 - [2026-11-20](2026-11-20.md) · Nikkei 225 lost 5.06% to 56,437, about 2.7x a normal day's move
