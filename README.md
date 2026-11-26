@@ -5,20 +5,20 @@ A daily, public-data read of rates, credit, equities and FX, a central-bank deco
 ## Today's brief
 
 <!-- BRIEF:START -->
-**Wed 25 Nov 2026 · US high-yield spread fell 13 bp to 363 bp, about 2.3x a normal day's move**
+**Thu 26 Nov 2026 · US 5s30s curve rose 6 bp to 61 bp, about 2.0x a normal day's move**
 
-- Shanghai Composite lost 2.03% to 3,476, about 2.2x a normal day's move.
-- US 3m T-bill rose 5 bp to 4.37%, about 2.2x a normal day's move.
-- KOSPI lost 6.16% to 4,698, about 1.7x a normal day's move.
-- Euro AAA 2s10s curve fell 4 bp to 29 bp, about 1.7x a normal day's move.
-- US 5s30s curve fell 5 bp to 55 bp, about 1.6x a normal day's move.
+- UK 5s20s curve fell 4 bp to 84 bp, about 1.6x a normal day's move.
+- US high-yield spread rose 9 bp to 372 bp, about 1.6x a normal day's move.
+- Euro Stoxx 50 gained 1.46% to 5,980.
+- FTSE 100 gained 1.03% to 10,534.
+- Copper gained 2.44% to 5.4625.
 
 **India**
 
-- Nifty 50 gained 1.58% to 25,751, about 1.7x a normal day's move.
-- Sensex gained 1.59% to 83,750, about 1.7x a normal day's move.
-- Nifty Bank gained 1.58% to 63,571.
-- India VIX gained 0.23 to 17.93.
+- Nifty 50 gained 0.14% to 25,855.
+- Sensex gained 0.16% to 84,069.
+- Nifty Bank lost 0.10% to 63,642.
+- India VIX lost 0.48 to 17.20.
 
 [Full brief, charts and table →](https://oblivion783.github.io/macro-quant-lab/) · [Archive](https://oblivion783.github.io/macro-quant-lab/brief/)
 <!-- BRIEF:END -->
